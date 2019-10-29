@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Autofac" Version="4.9.4" />
+    <ProjectReference Include="..\Df.Magalu.Challenge.Acl\Df.Magalu.Challenge.Acl.csproj" />
   </ItemGroup>
 
 </Project>

@@ -4,4 +4,8 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Df.Magalu.Challenge.Domain\Df.Magalu.Challenge.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
