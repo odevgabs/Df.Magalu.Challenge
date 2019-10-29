@@ -1,0 +1,14 @@
+language: csharp
+mono: none
+dotnet: 3.0.100
+script:
+ - dotnet restore
+ - dotnet test Df.Magalu.Challenge.Tests/Df.Magalu.Challenge.Tests.csproj
+ - dotnet build
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep_history: true
+  on:
+    branch: master
