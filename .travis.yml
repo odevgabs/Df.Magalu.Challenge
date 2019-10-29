@@ -3,7 +3,7 @@ mono: none
 dotnet: 3.0.100
 script:
  - dotnet restore
- - dotnet test Df.Magalu.Challenge.Tests/Df.Magalu.Challenge.Tests.csproj
+ - dotnet test Df.Magalu.Challenge.Tests/Df.Magalu.Challenge.Tests.csproj /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
  - dotnet build
 deploy:
   provider: pages

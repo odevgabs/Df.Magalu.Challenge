@@ -1,0 +1,42 @@
+﻿using Df.Magalu.Challenge.Domain.Interfaces.Entity;
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Df.Magalu.Challenge.Domain.Entity
+{
+    public class Client: IEntity
+    {
+        public string Name { get; private set; }
+        public string Email { get; private set; }
+        public List<Product> Products { get; private set; }
+
+
+        public Client(string name, string email)
+        {
+            DefineNome(name);
+            DefineEmail(email);
+            Products = new List<Product>();
+        }
+        public void DefineNome(string name)
+        {
+
+            if (string.IsNullOrEmpty(name))
+                throw new ArgumentException("Name is Null or Empty");
+
+            this.Name = name;
+        }
+        public void DefineEmail(string email)
+        {
+
+            if (string.IsNullOrEmpty(email))
+                throw new ArgumentException("email is Null or Empty");
+
+            this.Email = email;
+        }
+        public void AddProduct(Product product)
+        {
+            this.Products.Add(product);
+        }
+    }
+}
