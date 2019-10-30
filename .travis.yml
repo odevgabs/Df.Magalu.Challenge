@@ -1,9 +1,15 @@
 language: csharp
 mono: none
-dotnet: 3.0.100
+dotnet: 3.0
+addons:
+  sonarcloud:
+    organization: $SonarOrganization 
+    token:
+      secure: $SonarToken
 script:
  - dotnet restore
  - dotnet test Df.Magalu.Challenge.Tests/Df.Magalu.Challenge.Tests.csproj /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
+ - sonar-scanner
  - dotnet build
 deploy:
   provider: pages
