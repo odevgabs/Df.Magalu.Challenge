@@ -21,9 +21,8 @@ namespace Df.Magalu.Challenge.Tests.Acl
         private Mock<IConfiguration> _configurationMock;
         private Mock<IMapper> _mapperMock;
 
-
         [SetUp]
-        public void CreateHttpTest()
+        public void Setup()
         {
             _configurationMock = new Mock<IConfiguration>();
             _mapperMock = new Mock<IMapper>();
@@ -33,6 +32,7 @@ namespace Df.Magalu.Challenge.Tests.Acl
             _productLabsAcl = new ProductLabsAcl(_configurationMock.Object, _mapperMock.Object);
             _httpTest = new HttpTest();
         }
+
         [TearDown]
         public void DisposeHttpTest()
         {
@@ -40,9 +40,9 @@ namespace Df.Magalu.Challenge.Tests.Acl
         }
 
         [Test]
-        public async Task ShouldReturnProductById()
+        [TestCase("1bf0f365-fbdd-4e21-9786-da459d78dd1f")]
+        public async Task ShouldReturnProductById(Guid productId)
         {
-            Guid productId = new Guid("1bf0f365-fbdd-4e21-9786-da459d78dd1f");
             var result = await _productLabsAcl.GetProductById(productId);
 
             result.Should().NotBeNull();
