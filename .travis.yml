@@ -1,0 +1,20 @@
+language: csharp
+mono: none
+dotnet: 3.0
+addons:
+  sonarcloud:
+    organization: $SonarOrganization 
+    token:
+      secure: $SonarToken
+script:
+ - dotnet restore
+ - dotnet test Df.Magalu.Challenge.Tests/Df.Magalu.Challenge.Tests.csproj /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
+ - sonar-scanner
+ - dotnet build
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep_history: true
+  on:
+    branch: master
