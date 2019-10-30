@@ -9,12 +9,16 @@ namespace Df.Magalu.Challenge.Tests.Entity
 {
     public class ClientTests
     {
-        [Test]
-        public void ShouldCreateClient()
+        static IEnumerable<object[]> ClientWithProduct()
         {
-            string nameClient = "Gabriel Rodrigues";
-            string emailCliente = "grfgabriel.ti@gmail.com";
+            Product product = new Product();
+            return new[] { new object[] { "Gabriel Rodrigues", "grfgabriel.ti@gmail.com", product } };
+        }
 
+        [Test]
+        [TestCase("Gabriel Rodrigues", "grfgabriel.ti@gmail.com")]
+        public void ShouldCreateClient(string nameClient, string emailCliente)
+        {
             Client client = new Client(nameClient, emailCliente);
 
             client.Name.Should().Be(nameClient);
@@ -22,20 +26,23 @@ namespace Df.Magalu.Challenge.Tests.Entity
         }
 
         [Test]
-        public void ShouldAddProduct()
+        [TestCase("nameClient", "")]
+        [TestCase("", "emailCleinte")]
+        [TestCase("", "")]
+        public void ShouldNotCreateClient(string nameClient, string emailCliente)
         {
-            string nameClient = "Gabriel Rodrigues";
-            string emailCliente = "grfgabriel.ti@gmail.com";
+            Func<Client> cliente = () => new Client(nameClient, emailCliente);
+            cliente.Should().Throw<ArgumentException>();
+        }
 
-
-            Product product = new Product();
+        [Test, TestCaseSource("ClientWithProduct")]
+        public void ShouldAddProduct(string nameClient, string emailCliente, Product product)
+        {
             Client client = new Client(nameClient, emailCliente);
             client.AddProduct(product);
 
             client.Products.Count.Should().Be(1);
             client.Products.Should().NotBeNull();
         }
-
-
     }
 }
