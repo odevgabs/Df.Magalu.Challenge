@@ -1,0 +1,14 @@
+version: 2.1
+commands:
+  sync:
+    description: "Build"
+    steps:
+      - run:
+          name: Restore
+          command: dotnet restore
+      - run:
+          name: Test
+          command: dotnet test Df.Magalu.Challenge.Tests/Df.Magalu.Challenge.Tests.csproj /p:CollectCoverage=true /p:CoverletOutputFormat=opencover          
+      - run:
+          name: Restore
+          command: dotnet build        
