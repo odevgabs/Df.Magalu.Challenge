@@ -13,4 +13,8 @@
     <ProjectReference Include="..\Df.Magalu.Challenge.Acl\Df.Magalu.Challenge.Acl.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Responses\" />
+  </ItemGroup>
+
 </Project>

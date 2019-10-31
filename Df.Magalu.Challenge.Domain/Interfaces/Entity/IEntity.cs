@@ -4,8 +4,9 @@ using System.Text;
 
 namespace Df.Magalu.Challenge.Domain.Interfaces.Entity
 {
-    public interface IEntity 
+    public interface IEntity
     {
-
+        Guid _id { get; }
+        DateTime CreationDate { get; }
     }
 }
