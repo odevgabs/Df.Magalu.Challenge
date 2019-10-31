@@ -3,5 +3,5 @@ projectKey=grfgabrielti_Df.Magalu.Challenge
 serverUrl=https://sonarcloud.io
 serverVersion=8.0.0.2200
 dashboardUrl=https://sonarcloud.io/dashboard?id=grfgabrielti_Df.Magalu.Challenge
-ceTaskId=AW4f06TG4VwjVHYWt947
-ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AW4f06TG4VwjVHYWt947
+ceTaskId=AW4f2C4LifXf-grhrJYM
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AW4f2C4LifXf-grhrJYM
