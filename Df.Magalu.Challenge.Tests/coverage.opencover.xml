@@ -2,9 +2,9 @@
 <CoverageSession>
   <Summary numSequencePoints="77" visitedSequencePoints="63" numBranchPoints="6" visitedBranchPoints="6" sequenceCoverage="81.81" branchCoverage="100" maxCyclomaticComplexity="29" minCyclomaticComplexity="2" visitedClasses="10" numClasses="12" visitedMethods="19" numMethods="33" />
   <Modules>
-    <Module hash="31B01CBD-564D-4A07-930D-AA4DEFDE8344">
+    <Module hash="ADC39EB3-C298-4B55-9ED1-A086304F6A39">
       <ModulePath>Df.Magalu.Challenge.Acl.dll</ModulePath>
-      <ModuleTime>2019-10-31T03:26:10</ModuleTime>
+      <ModuleTime>2019-10-31T03:38:11</ModuleTime>
       <ModuleName>Df.Magalu.Challenge.Acl</ModuleName>
       <Files>
         <File uid="1" fullPath="/home/travis/build/grfgabrielti/Df.Magalu.Challenge/Df.Magalu.Challenge.Acl/ProductLabsAcl.cs" />
@@ -58,9 +58,9 @@
         </Class>
       </Classes>
     </Module>
-    <Module hash="8E69EAAD-F032-4826-8D37-008AF7B32CAD">
+    <Module hash="0B9C4D40-7F1D-40E6-8F81-CCD56A775C8F">
       <ModulePath>Df.Magalu.Challenge.Domain.dll</ModulePath>
-      <ModuleTime>2019-10-31T03:26:10</ModuleTime>
+      <ModuleTime>2019-10-31T03:38:11</ModuleTime>
       <ModuleName>Df.Magalu.Challenge.Domain</ModuleName>
       <Files>
         <File uid="2" fullPath="/home/travis/build/grfgabrielti/Df.Magalu.Challenge/Df.Magalu.Challenge.Domain/Service/ClientDomainService.cs" />
@@ -446,9 +446,9 @@
         </Class>
       </Classes>
     </Module>
-    <Module hash="4757693D-386E-4524-8675-CA5CF422ADAF">
+    <Module hash="69000947-D3AF-46C5-B771-976B7BB1ADC7">
       <ModulePath>Df.Magalu.Challenge.Service.dll</ModulePath>
-      <ModuleTime>2019-10-31T03:26:10</ModuleTime>
+      <ModuleTime>2019-10-31T03:38:11</ModuleTime>
       <ModuleName>Df.Magalu.Challenge.Service</ModuleName>
       <Files>
         <File uid="8" fullPath="/home/travis/build/grfgabrielti/Df.Magalu.Challenge/Df.Magalu.Challenge.Service/ClientService.cs" />
