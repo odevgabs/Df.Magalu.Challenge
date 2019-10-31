@@ -1,4 +1,5 @@
 ﻿using Df.Magalu.Challenge.Domain.Entity;
+using Df.Magalu.Challenge.Domain.Interfaces.Entity;
 using FluentAssertions;
 using NUnit.Framework;
 using System;
@@ -19,8 +20,10 @@ namespace Df.Magalu.Challenge.Tests.Entity
         [TestCase("Gabriel Rodrigues", "grfgabriel.ti@gmail.com")]
         public void ShouldCreateClient(string nameClient, string emailCliente)
         {
-            Client client = new Client(nameClient, emailCliente);
+            IClient client = new Client(nameClient, emailCliente);
 
+            client._id.Should().NotBeEmpty();
+            client.CreationDate.Should().NotBeOnOrAfter(DateTime.Now);
             client.Name.Should().Be(nameClient);
             client.Email.Should().Be(emailCliente);
         }
@@ -31,18 +34,18 @@ namespace Df.Magalu.Challenge.Tests.Entity
         [TestCase("", "")]
         public void ShouldNotCreateClient(string nameClient, string emailCliente)
         {
-            Func<Client> cliente = () => new Client(nameClient, emailCliente);
+            Func<IClient> cliente = () => new Client(nameClient, emailCliente);
             cliente.Should().Throw<ArgumentException>();
         }
 
         [Test, TestCaseSource("ClientWithProduct")]
         public void ShouldAddProduct(string nameClient, string emailCliente, Product product)
         {
-            Client client = new Client(nameClient, emailCliente);
-            client.AddProduct(product);
+            IClient client = new Client(nameClient, emailCliente);
+            client.AddFavoriteProduct(product);
 
-            client.Products.Count.Should().Be(1);
-            client.Products.Should().NotBeNull();
+            client.FavoritesProducts.Count.Should().Be(1);
+            client.FavoritesProducts.Should().NotBeNull();
         }
     }
 }

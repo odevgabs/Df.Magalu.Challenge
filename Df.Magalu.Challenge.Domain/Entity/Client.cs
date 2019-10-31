@@ -5,18 +5,24 @@ using System.Text;
 
 namespace Df.Magalu.Challenge.Domain.Entity
 {
-    public class Client: IEntity
+    public class Client : IEntity, IClient
     {
+        public Guid _id { get; private set; }
+        public DateTime CreationDate { get; private set; }
+
         public string Name { get; private set; }
         public string Email { get; private set; }
-        public List<Product> Products { get; private set; }
+        public List<Product> FavoritesProducts { get; private set; }
 
 
         public Client(string name, string email)
         {
+            _id = Guid.NewGuid();
+            CreationDate = DateTime.Now;
+
             DefineNome(name);
             DefineEmail(email);
-            Products = new List<Product>();
+            FavoritesProducts = new List<Product>();
         }
         public void DefineNome(string name)
         {
@@ -34,9 +40,9 @@ namespace Df.Magalu.Challenge.Domain.Entity
 
             this.Email = email;
         }
-        public void AddProduct(Product product)
+        public void AddFavoriteProduct(Product product)
         {
-            this.Products.Add(product);
+            this.FavoritesProducts.Add(product);
         }
     }
 }

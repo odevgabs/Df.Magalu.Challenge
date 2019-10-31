@@ -5,12 +5,10 @@ using System.Text;
 
 namespace Df.Magalu.Challenge.Domain.Entity
 {
-    public class BaseEntity : IEntity
+    public class BaseEntity<T> : IEntity
     {
-        public BaseEntity()
-        {
-        }
-
         public Guid _id { get; private set; }
+
+        public DateTime CreationDate { get; private set; }
     }
 }
