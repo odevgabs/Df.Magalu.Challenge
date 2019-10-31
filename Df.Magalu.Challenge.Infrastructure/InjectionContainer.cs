@@ -54,6 +54,31 @@ namespace Df.Magalu.Challenge.Infrastructure
             });
             #endregion
 
+            #region Services and DomainServices
+            var services = assemblies.Where(x => x.FullName.Contains(assemblyName)).ToList().Where(type => type.FullName.Contains("Service"));
+
+            assemblies.Where(x => x.FullName.Contains(assemblyName)).ToList().ForEach(assembly =>
+            {
+                builder
+                    .RegisterAssemblyTypes(assembly)
+                    .Where(type => type.FullName.EndsWith("Service"))
+                    .AsImplementedInterfaces();
+            });
+            #endregion
+
+
+            #region Factories
+            var factories = assemblies.Where(x => x.FullName.Contains(assemblyName)).ToList().Where(type => type.FullName.Contains("Factor"));
+
+            assemblies.Where(x => x.FullName.Contains(assemblyName)).ToList().ForEach(assembly =>
+            {
+                builder
+                    .RegisterAssemblyTypes(assembly)
+                    .Where(type => type.FullName.EndsWith("Factor"))
+                    .AsImplementedInterfaces();
+            });
+            #endregion
+
         }
     }
 }

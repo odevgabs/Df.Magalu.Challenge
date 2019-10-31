@@ -1,23 +1,22 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Threading.Tasks;
-using Autofac;
-using Df.Magalu.Challenge.Infrastructure;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using Scrutor;
 using Microsoft.OpenApi.Models;
 using Df.Magalu.Challenge.Domain.Entity;
 using Df.Magalu.Challenge.Domain.Dto;
 using AutoMapper;
+using Df.Magalu.Challenge.Service;
+using Df.Magalu.Challenge.Service.Interfaces;
+using Df.Magalu.Challenge.Domain.Interfaces.Factories;
+using Df.Magalu.Challenge.Domain.Factories;
+using Df.Magalu.Challenge.Domain.Interfaces.Acl;
+using Df.Magalu.Challenge.Acl;
+using Df.Magalu.Challenge.Domain.Interfaces.Repositories;
+using Df.Magalu.Challenge.Data;
+using Df.Magalu.Challenge.Data.Context;
+using Df.Magalu.Challenge.Data.Repositories;
 
 namespace Df.Magalu.Challenge.Api
 {
@@ -47,13 +46,21 @@ namespace Df.Magalu.Challenge.Api
             IMapper mapper = config.CreateMapper();
             services.AddSingleton(mapper);
 
-        }
 
-        public void ConfigureContainer(ContainerBuilder builder)
-        {
-            builder.RegisterModule<InjectionContainer>();
-        }
 
+            services.AddTransient<IClientFactory, ClientFactory>();
+
+            services.AddTransient<IProductLabsAcl, ProductLabsAcl>();
+
+            services.AddScoped<IMongoContext, MongoContext>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddTransient<IClientRepository, ClientRepository>();
+
+            services.AddTransient<IClientService, ClientService>();
+
+
+
+        }
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
@@ -67,7 +74,6 @@ namespace Df.Magalu.Challenge.Api
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Magalu Challege");
             });
 
-            //app.UseHttpsRedirection();
 
             app.UseRouting();
 

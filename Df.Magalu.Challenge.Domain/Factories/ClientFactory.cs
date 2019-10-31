@@ -9,7 +9,7 @@ namespace Df.Magalu.Challenge.Domain.Factories
 {
     public class ClientFactory: IClientFactory
     {
-        public IClient Create(string name, string email)
+         public IClient Create(string name, string email)
         {
             IClient client = new Client(name, email);
             return client;
