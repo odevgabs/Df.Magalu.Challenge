@@ -1,5 +1,6 @@
 ﻿using Df.Magalu.Challenge.Domain.Interfaces.Entity;
-using Df.Magalu.Challenge.Domain.Interfaces.Service;
+using Df.Magalu.Challenge.Domain.Interfaces.Factories;
+using Df.Magalu.Challenge.Domain.Interfaces.Repositories;
 using Df.Magalu.Challenge.Service.Interfaces;
 using Df.Magalu.Challenge.Service.Requests.Client;
 using System;
@@ -11,16 +12,24 @@ namespace Df.Magalu.Challenge.Service
 {
     public class ClientService : IClientService
     {
+        private readonly IClientFactory _clientFactory;
+        private readonly IUnitOfWork _unitOfWork;
+        private readonly IClientRepository _clientRepository;
 
-        private readonly IClientDomainService _clientDomainService;
-        public ClientService(IClientDomainService clientDomainService)
+
+        public ClientService(IClientFactory clientFactory, IUnitOfWork unitOfWork, IClientRepository clientRepository)
         {
-            this._clientDomainService = clientDomainService;
+            _clientFactory = clientFactory;
+            _unitOfWork = unitOfWork;
+            _clientRepository = clientRepository;
         }
 
         public async Task<IClient> Create(ClientCreateRequest request)
         {
-            IClient client = await _clientDomainService.Create(request.Name, request.Email);
+            IClient client = _clientFactory.Create(request.Name, request.Email);
+            _clientRepository.Create(client);
+
+            _unitOfWork.Commit();
             return client;
         }
     }
