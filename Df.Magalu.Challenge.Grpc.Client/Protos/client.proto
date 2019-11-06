@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option csharp_namespace = "Df.Magalu.Challenge.Grpc.Protos";
+
+package ClientGrpc;
+
+service ClientGrpc {
+  rpc Create (CreateRequestGrpc) returns (CreateResponseGrpc);
+}
+
+
+message CreateRequestGrpc {
+  string Name = 1;
+  string Email = 2;
+}
+
+message CreateResponseGrpc{
+	bool Success = 1;
+}

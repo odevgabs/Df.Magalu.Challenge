@@ -25,6 +25,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Df.Magalu.Challenge.Acl\Df.Magalu.Challenge.Acl.csproj" />
+    <ProjectReference Include="..\Df.Magalu.Challenge.Data\Df.Magalu.Challenge.Data.csproj" />
     <ProjectReference Include="..\Df.Magalu.Challenge.Domain\Df.Magalu.Challenge.Domain.csproj" />
     <ProjectReference Include="..\Df.Magalu.Challenge.Service\Df.Magalu.Challenge.Service.csproj" />
   </ItemGroup>

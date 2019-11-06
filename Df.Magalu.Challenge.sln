@@ -15,7 +15,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Df.Magalu.Challenge.Tests",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Df.Magalu.Challenge.Api", "Df.Magalu.Challenge.Api\Df.Magalu.Challenge.Api.csproj", "{5A0A6335-2724-4455-9F5E-175DA1425562}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Df.Magalu.Challenge.Service", "Df.Magalu.Challenge.Service\Df.Magalu.Challenge.Service.csproj", "{30A49BF7-4175-442C-A321-9FC477745FD2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Df.Magalu.Challenge.Service", "Df.Magalu.Challenge.Service\Df.Magalu.Challenge.Service.csproj", "{30A49BF7-4175-442C-A321-9FC477745FD2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Df.Magalu.Challenge.Grpc", "Df.Magalu.Challenge.Grpc\Df.Magalu.Challenge.Grpc.csproj", "{6AD63DB2-8EF1-42F0-AA64-E6E91B3EDE94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Df.Magalu.Challenge.Grpc.Client", "Df.Magalu.Challenge.Grpc.Client\Df.Magalu.Challenge.Grpc.Client.csproj", "{98EBC8F7-387E-4EA4-BDEE-EC0FB0E962C2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +55,14 @@ Global
 		{30A49BF7-4175-442C-A321-9FC477745FD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30A49BF7-4175-442C-A321-9FC477745FD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30A49BF7-4175-442C-A321-9FC477745FD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AD63DB2-8EF1-42F0-AA64-E6E91B3EDE94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AD63DB2-8EF1-42F0-AA64-E6E91B3EDE94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AD63DB2-8EF1-42F0-AA64-E6E91B3EDE94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AD63DB2-8EF1-42F0-AA64-E6E91B3EDE94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98EBC8F7-387E-4EA4-BDEE-EC0FB0E962C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98EBC8F7-387E-4EA4-BDEE-EC0FB0E962C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98EBC8F7-387E-4EA4-BDEE-EC0FB0E962C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98EBC8F7-387E-4EA4-BDEE-EC0FB0E962C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
