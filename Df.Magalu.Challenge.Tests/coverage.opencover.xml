@@ -1,13 +1,401 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <CoverageSession>
-  <Summary numSequencePoints="77" visitedSequencePoints="63" numBranchPoints="6" visitedBranchPoints="6" sequenceCoverage="81.81" branchCoverage="100" maxCyclomaticComplexity="29" minCyclomaticComplexity="2" visitedClasses="10" numClasses="12" visitedMethods="19" numMethods="33" />
+  <Summary numSequencePoints="151" visitedSequencePoints="71" numBranchPoints="37" visitedBranchPoints="5" sequenceCoverage="47.01" branchCoverage="13.51" maxCyclomaticComplexity="47" minCyclomaticComplexity="2" visitedClasses="9" numClasses="19" visitedMethods="20" numMethods="52" />
   <Modules>
-    <Module hash="ADC39EB3-C298-4B55-9ED1-A086304F6A39">
+    <Module hash="B7EFA589-35FA-4A51-B7C2-BEBA8851407C">
+      <ModulePath>Df.Magalu.Challenge.Data.dll</ModulePath>
+      <ModuleTime>2019-12-27T06:37:59</ModuleTime>
+      <ModuleName>Df.Magalu.Challenge.Data</ModuleName>
+      <Files>
+        <File uid="1" fullPath="/home/travis/build/grfgabrielti/Df.Magalu.Challenge/Df.Magalu.Challenge.Data/UnitOfWork.cs" />
+        <File uid="2" fullPath="/home/travis/build/grfgabrielti/Df.Magalu.Challenge/Df.Magalu.Challenge.Data/Repositories/MongoContext.cs" />
+        <File uid="3" fullPath="/home/travis/build/grfgabrielti/Df.Magalu.Challenge/Df.Magalu.Challenge.Data/Repositories/BaseRepository.cs" />
+        <File uid="4" fullPath="/home/travis/build/grfgabrielti/Df.Magalu.Challenge/Df.Magalu.Challenge.Data/Repositories/ClientRepository.cs" />
+      </Files>
+      <Classes>
+        <Class>
+          <Summary numSequencePoints="12" visitedSequencePoints="12" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="3" numMethods="3" />
+          <FullName>Df.Magalu.Challenge.Data.UnitOfWork</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="5" visitedSequencePoints="5" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Boolean Df.Magalu.Challenge.Data.UnitOfWork::Commit()</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="2" uspid="18" ordinal="0" sl="18" sc="1" el="18" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="2" uspid="19" ordinal="1" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="2" uspid="20" ordinal="2" sl="20" sc="1" el="20" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="2" uspid="21" ordinal="3" sl="21" sc="1" el="21" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="2" uspid="22" ordinal="4" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="5" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="18" ec="1" el="22" bec="0" bev="0" fileid="1" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void Df.Magalu.Challenge.Data.UnitOfWork::Dispose()</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="25" ordinal="0" sl="25" sc="1" el="25" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="26" ordinal="1" sl="26" sc="1" el="26" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="27" ordinal="2" sl="27" sc="1" el="27" ec="2" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="3" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="25" ec="1" el="27" bec="0" bev="0" fileid="1" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="4" visitedSequencePoints="4" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void Df.Magalu.Challenge.Data.UnitOfWork::.ctor(Df.Magalu.Challenge.Domain.Interfaces.Repositories.IMongoContext)</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="3" uspid="12" ordinal="0" sl="12" sc="1" el="12" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="3" uspid="13" ordinal="1" sl="13" sc="1" el="13" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="3" uspid="14" ordinal="2" sl="14" sc="1" el="14" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="3" uspid="15" ordinal="3" sl="15" sc="1" el="15" ec="2" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="4" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="12" ec="1" el="15" bec="0" bev="0" fileid="1" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="31" visitedSequencePoints="0" numBranchPoints="10" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="4" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="9" />
+          <FullName>Df.Magalu.Challenge.Data.Context.MongoContext</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>MongoDB.Driver.IMongoDatabase Df.Magalu.Challenge.Data.Context.MongoContext::get_Database()</Name>
+              <FileRef uid="2" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="17" ordinal="0" sl="17" sc="1" el="17" ec="2" bec="0" bev="0" fileid="2" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="17" ec="1" el="17" bec="0" bev="0" fileid="2" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>MongoDB.Driver.IMongoClient Df.Magalu.Challenge.Data.Context.MongoContext::get_MongoClient()</Name>
+              <FileRef uid="2" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="18" ordinal="0" sl="18" sc="1" el="18" ec="2" bec="0" bev="0" fileid="2" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="18" ec="1" el="18" bec="0" bev="0" fileid="2" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Collections.Generic.List`1&lt;System.Func`1&lt;System.Threading.Tasks.Task&gt;&gt; Df.Magalu.Challenge.Data.Context.MongoContext::get__commands()</Name>
+              <FileRef uid="2" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="19" ordinal="0" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="2" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="19" ec="1" el="19" bec="0" bev="0" fileid="2" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>MongoDB.Driver.IClientSessionHandle Df.Magalu.Challenge.Data.Context.MongoContext::get_Session()</Name>
+              <FileRef uid="2" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="20" ordinal="0" sl="20" sc="1" el="20" ec="2" bec="0" bev="0" fileid="2" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="3" offset="3" sc="0" sl="20" ec="1" el="20" bec="0" bev="0" fileid="2" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="2" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="8" visitedSequencePoints="0" numBranchPoints="2" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void Df.Magalu.Challenge.Data.Context.MongoContext::RegisterConventions()</Name>
+              <FileRef uid="2" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="38" ordinal="0" sl="38" sc="1" el="38" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="39" ordinal="1" sl="39" sc="1" el="39" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="40" ordinal="2" sl="40" sc="1" el="40" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="41" ordinal="3" sl="41" sc="1" el="41" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="42" ordinal="4" sl="42" sc="1" el="42" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="43" ordinal="5" sl="43" sc="1" el="43" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="44" ordinal="6" sl="44" sc="1" el="44" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="45" ordinal="7" sl="45" sc="1" el="45" ec="2" bec="0" bev="0" fileid="2" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="0" uspid="44" ordinal="0" path="0" offset="45" offsetend="47" sl="44" fileid="2" />
+                <BranchPoint vc="0" uspid="44" ordinal="1" path="1" offset="45" offsetend="70" sl="44" fileid="2" />
+              </BranchPoints>
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="4" offset="4" sc="0" sl="38" ec="1" el="45" bec="0" bev="0" fileid="2" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>MongoDB.Driver.IMongoCollection`1&lt;T&gt; Df.Magalu.Challenge.Data.Context.MongoContext::GetCollection(System.String)</Name>
+              <FileRef uid="2" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="64" ordinal="0" sl="64" sc="1" el="64" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="65" ordinal="1" sl="65" sc="1" el="65" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="66" ordinal="2" sl="66" sc="1" el="66" ec="2" bec="0" bev="0" fileid="2" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="5" offset="5" sc="0" sl="64" ec="1" el="66" bec="0" bev="0" fileid="2" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="4" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="5" visitedSequencePoints="0" numBranchPoints="4" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="4" minCyclomaticComplexity="4" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void Df.Magalu.Challenge.Data.Context.MongoContext::Dispose()</Name>
+              <FileRef uid="2" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="69" ordinal="0" sl="69" sc="1" el="69" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="70" ordinal="1" sl="70" sc="1" el="70" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="71" ordinal="2" sl="71" sc="1" el="71" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="73" ordinal="3" sl="73" sc="1" el="73" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="74" ordinal="4" sl="74" sc="1" el="74" ec="2" bec="0" bev="0" fileid="2" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="0" uspid="70" ordinal="3" path="1" offset="47" offsetend="3" sl="70" fileid="2" />
+                <BranchPoint vc="0" uspid="70" ordinal="0" path="0" offset="29" offsetend="31" sl="70" fileid="2" />
+                <BranchPoint vc="0" uspid="70" ordinal="1" path="1" offset="29" offsetend="44" sl="70" fileid="2" />
+                <BranchPoint vc="0" uspid="70" ordinal="2" path="0" offset="47" offsetend="49" sl="70" fileid="2" />
+              </BranchPoints>
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="6" offset="6" sc="0" sl="69" ec="1" el="74" bec="0" bev="0" fileid="2" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void Df.Magalu.Challenge.Data.Context.MongoContext::AddCommand(System.Func`1&lt;System.Threading.Tasks.Task&gt;)</Name>
+              <FileRef uid="2" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="77" ordinal="0" sl="77" sc="1" el="77" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="78" ordinal="1" sl="78" sc="1" el="78" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="79" ordinal="2" sl="79" sc="1" el="79" ec="2" bec="0" bev="0" fileid="2" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="7" offset="7" sc="0" sl="77" ec="1" el="79" bec="0" bev="0" fileid="2" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="4" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="8" visitedSequencePoints="0" numBranchPoints="4" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="4" minCyclomaticComplexity="4" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void Df.Magalu.Challenge.Data.Context.MongoContext::.ctor(Microsoft.Extensions.Configuration.IConfiguration)</Name>
+              <FileRef uid="2" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="23" ordinal="0" sl="23" sc="1" el="23" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="24" ordinal="1" sl="24" sc="1" el="24" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="25" ordinal="2" sl="25" sc="1" el="25" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="27" ordinal="3" sl="27" sc="1" el="27" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="29" ordinal="4" sl="29" sc="1" el="29" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="31" ordinal="5" sl="31" sc="1" el="31" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="33" ordinal="6" sl="33" sc="1" el="33" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="35" ordinal="7" sl="35" sc="1" el="35" ec="2" bec="0" bev="0" fileid="2" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="0" uspid="31" ordinal="0" path="0" offset="46" offsetend="48" sl="31" fileid="2" />
+                <BranchPoint vc="0" uspid="31" ordinal="1" path="1" offset="46" offsetend="75" sl="31" fileid="2" />
+                <BranchPoint vc="0" uspid="33" ordinal="2" path="0" offset="104" offsetend="106" sl="33" fileid="2" />
+                <BranchPoint vc="0" uspid="33" ordinal="3" path="1" offset="104" offsetend="133" sl="33" fileid="2" />
+              </BranchPoints>
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="8" offset="8" sc="0" sl="23" ec="1" el="35" bec="0" bev="0" fileid="2" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="1" />
+          <FullName>Df.Magalu.Challenge.Data.Context.MongoContext/&lt;&gt;c</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Threading.Tasks.Task Df.Magalu.Challenge.Data.Context.MongoContext/&lt;&gt;c::&lt;SaveChanges&gt;b__18_0(System.Func`1&lt;System.Threading.Tasks.Task&gt;)</Name>
+              <FileRef uid="2" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="53" ordinal="0" sl="53" sc="1" el="53" ec="2" bec="0" bev="0" fileid="2" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="53" ec="1" el="53" bec="0" bev="0" fileid="2" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="9" visitedSequencePoints="0" numBranchPoints="14" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="14" minCyclomaticComplexity="14" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="1" />
+          <FullName>Df.Magalu.Challenge.Data.Context.MongoContext/&lt;SaveChanges&gt;d__18</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="14" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="9" visitedSequencePoints="0" numBranchPoints="14" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="14" minCyclomaticComplexity="14" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void Df.Magalu.Challenge.Data.Context.MongoContext/&lt;SaveChanges&gt;d__18::MoveNext()</Name>
+              <FileRef uid="2" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="48" ordinal="0" sl="48" sc="1" el="48" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="49" ordinal="1" sl="49" sc="1" el="49" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="50" ordinal="2" sl="50" sc="1" el="50" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="51" ordinal="3" sl="51" sc="1" el="51" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="55" ordinal="4" sl="55" sc="1" el="55" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="57" ordinal="5" sl="57" sc="1" el="57" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="58" ordinal="6" sl="58" sc="1" el="58" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="60" ordinal="7" sl="60" sc="1" el="60" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="61" ordinal="8" sl="61" sc="1" el="61" ec="2" bec="0" bev="0" fileid="2" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="0" uspid="48" ordinal="0" path="0" offset="16" offsetend="27" sl="48" fileid="2" />
+                <BranchPoint vc="0" uspid="49" ordinal="2" path="0" offset="67" offsetend="69" sl="49" fileid="2" />
+                <BranchPoint vc="0" uspid="49" ordinal="3" path="1" offset="67" offsetend="137" sl="49" fileid="2" />
+                <BranchPoint vc="0" uspid="48" ordinal="1" path="1" offset="16" offsetend="205" sl="48" fileid="2" />
+                <BranchPoint vc="0" uspid="49" ordinal="4" path="0" offset="208" offsetend="212" sl="49" fileid="2" />
+                <BranchPoint vc="0" uspid="49" ordinal="6" path="0" offset="214" offsetend="228" sl="49" fileid="2" />
+                <BranchPoint vc="0" uspid="53" ordinal="8" path="0" offset="265" offsetend="267" sl="53" fileid="2" />
+                <BranchPoint vc="0" uspid="53" ordinal="9" path="1" offset="265" offsetend="290" sl="53" fileid="2" />
+                <BranchPoint vc="0" uspid="55" ordinal="10" path="0" offset="325" offsetend="327" sl="55" fileid="2" />
+                <BranchPoint vc="0" uspid="49" ordinal="5" path="1" offset="208" offsetend="368" sl="49" fileid="2" />
+                <BranchPoint vc="0" uspid="55" ordinal="11" path="1" offset="325" offsetend="397" sl="55" fileid="2" />
+                <BranchPoint vc="0" uspid="57" ordinal="12" path="0" offset="444" offsetend="446" sl="57" fileid="2" />
+                <BranchPoint vc="0" uspid="49" ordinal="7" path="1" offset="214" offsetend="487" sl="49" fileid="2" />
+                <BranchPoint vc="0" uspid="57" ordinal="13" path="1" offset="444" offsetend="516" sl="57" fileid="2" />
+              </BranchPoints>
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="48" ec="1" el="61" bec="0" bev="0" fileid="2" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="14" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="4" />
+          <FullName>Df.Magalu.Challenge.Data.Repositories.BaseRepository`1</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void Df.Magalu.Challenge.Data.Repositories.BaseRepository`1::Create(TEntity)</Name>
+              <FileRef uid="3" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="22" ordinal="0" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="23" ordinal="1" sl="23" sc="1" el="23" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="24" ordinal="2" sl="24" sc="1" el="24" ec="2" bec="0" bev="0" fileid="3" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="22" ec="1" el="24" bec="0" bev="0" fileid="3" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void Df.Magalu.Challenge.Data.Repositories.BaseRepository`1::Remove(System.Guid)</Name>
+              <FileRef uid="3" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="40" ordinal="0" sl="40" sc="1" el="40" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="41" ordinal="1" sl="41" sc="1" el="41" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="42" ordinal="2" sl="42" sc="1" el="42" ec="2" bec="0" bev="0" fileid="3" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="40" ec="1" el="42" bec="0" bev="0" fileid="3" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void Df.Magalu.Challenge.Data.Repositories.BaseRepository`1::Dispose()</Name>
+              <FileRef uid="3" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="45" ordinal="0" sl="45" sc="1" el="45" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="46" ordinal="1" sl="46" sc="1" el="46" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="47" ordinal="2" sl="47" sc="1" el="47" ec="2" bec="0" bev="0" fileid="3" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="45" ec="1" el="47" bec="0" bev="0" fileid="3" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="5" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void Df.Magalu.Challenge.Data.Repositories.BaseRepository`1::.ctor(Df.Magalu.Challenge.Domain.Interfaces.Repositories.IMongoContext)</Name>
+              <FileRef uid="3" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="15" ordinal="0" sl="15" sc="1" el="15" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="16" ordinal="1" sl="16" sc="1" el="16" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="17" ordinal="2" sl="17" sc="1" el="17" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="18" ordinal="3" sl="18" sc="1" el="18" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="19" ordinal="4" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="3" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="3" offset="3" sc="0" sl="15" ec="1" el="19" bec="0" bev="0" fileid="3" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="4" visitedSequencePoints="0" numBranchPoints="2" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="1" />
+          <FullName>Df.Magalu.Challenge.Data.Repositories.BaseRepository`1/&lt;GetById&gt;d__4</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="2" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="4" visitedSequencePoints="0" numBranchPoints="2" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void Df.Magalu.Challenge.Data.Repositories.BaseRepository`1/&lt;GetById&gt;d__4::MoveNext()</Name>
+              <FileRef uid="3" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="27" ordinal="0" sl="27" sc="1" el="27" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="28" ordinal="1" sl="28" sc="1" el="28" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="29" ordinal="2" sl="29" sc="1" el="29" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="30" ordinal="3" sl="30" sc="1" el="30" ec="2" bec="0" bev="0" fileid="3" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="0" uspid="28" ordinal="0" path="0" offset="80" offsetend="82" sl="28" fileid="3" />
+                <BranchPoint vc="0" uspid="28" ordinal="1" path="1" offset="80" offsetend="150" sl="28" fileid="3" />
+              </BranchPoints>
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="27" ec="1" el="30" bec="0" bev="0" fileid="3" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="4" visitedSequencePoints="0" numBranchPoints="2" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="1" />
+          <FullName>Df.Magalu.Challenge.Data.Repositories.BaseRepository`1/&lt;GetAll&gt;d__5</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="2" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="4" visitedSequencePoints="0" numBranchPoints="2" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void Df.Magalu.Challenge.Data.Repositories.BaseRepository`1/&lt;GetAll&gt;d__5::MoveNext()</Name>
+              <FileRef uid="3" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="33" ordinal="0" sl="33" sc="1" el="33" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="34" ordinal="1" sl="34" sc="1" el="34" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="35" ordinal="2" sl="35" sc="1" el="35" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="36" ordinal="3" sl="36" sc="1" el="36" ec="2" bec="0" bev="0" fileid="3" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="0" uspid="34" ordinal="0" path="0" offset="64" offsetend="66" sl="34" fileid="3" />
+                <BranchPoint vc="0" uspid="34" ordinal="1" path="1" offset="64" offsetend="134" sl="34" fileid="3" />
+              </BranchPoints>
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="33" ec="1" el="36" bec="0" bev="0" fileid="3" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="4" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="0" maxCyclomaticComplexity="4" minCyclomaticComplexity="4" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="0" />
+          <FullName>Df.Magalu.Challenge.Data.Repositories.BaseRepository`1/&lt;&gt;c__DisplayClass3_0/&lt;&lt;Create&gt;b__0&gt;d</FullName>
+          <Methods />
+        </Class>
+        <Class>
+          <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="1" />
+          <FullName>Df.Magalu.Challenge.Data.Repositories.ClientRepository</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void Df.Magalu.Challenge.Data.Repositories.ClientRepository::.ctor(Df.Magalu.Challenge.Domain.Interfaces.Repositories.IMongoContext)</Name>
+              <FileRef uid="4" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="14" ordinal="0" sl="14" sc="1" el="14" ec="2" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="0" uspid="15" ordinal="1" sl="15" sc="1" el="15" ec="2" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="0" uspid="16" ordinal="2" sl="16" sc="1" el="16" ec="2" bec="0" bev="0" fileid="4" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="14" ec="1" el="16" bec="0" bev="0" fileid="4" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+      </Classes>
+    </Module>
+    <Module hash="F9B697AD-46FD-432F-B577-36C884FAE4AE">
       <ModulePath>Df.Magalu.Challenge.Acl.dll</ModulePath>
-      <ModuleTime>2019-10-31T03:38:11</ModuleTime>
+      <ModuleTime>2019-12-27T06:37:59</ModuleTime>
       <ModuleName>Df.Magalu.Challenge.Acl</ModuleName>
       <Files>
-        <File uid="1" fullPath="/home/travis/build/grfgabrielti/Df.Magalu.Challenge/Df.Magalu.Challenge.Acl/ProductLabsAcl.cs" />
+        <File uid="5" fullPath="/home/travis/build/grfgabrielti/Df.Magalu.Challenge/Df.Magalu.Challenge.Acl/ProductLabsAcl.cs" />
       </Files>
       <Classes>
         <Class>
@@ -18,16 +406,16 @@
               <Summary numSequencePoints="5" visitedSequencePoints="5" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
               <MetadataToken />
               <Name>System.Void Df.Magalu.Challenge.Acl.ProductLabsAcl::.ctor(Microsoft.Extensions.Configuration.IConfiguration,AutoMapper.IMapper)</Name>
-              <FileRef uid="1" />
+              <FileRef uid="5" />
               <SequencePoints>
-                <SequencePoint vc="1" uspid="18" ordinal="0" sl="18" sc="1" el="18" ec="2" bec="0" bev="0" fileid="1" />
-                <SequencePoint vc="1" uspid="19" ordinal="1" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="1" />
-                <SequencePoint vc="1" uspid="20" ordinal="2" sl="20" sc="1" el="20" ec="2" bec="0" bev="0" fileid="1" />
-                <SequencePoint vc="1" uspid="21" ordinal="3" sl="21" sc="1" el="21" ec="2" bec="0" bev="0" fileid="1" />
-                <SequencePoint vc="1" uspid="23" ordinal="4" sl="23" sc="1" el="23" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="18" ordinal="0" sl="18" sc="1" el="18" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="1" uspid="19" ordinal="1" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="1" uspid="20" ordinal="2" sl="20" sc="1" el="20" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="1" uspid="21" ordinal="3" sl="21" sc="1" el="21" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="1" uspid="23" ordinal="4" sl="23" sc="1" el="23" ec="2" bec="0" bev="0" fileid="5" />
               </SequencePoints>
               <BranchPoints />
-              <MethodPoint vc="5" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="18" ec="1" el="23" bec="0" bev="0" fileid="1" xmlns:p8="xsi" />
+              <MethodPoint vc="5" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="18" ec="1" el="23" bec="0" bev="0" fileid="5" xmlns:p8="xsi" />
             </Method>
           </Methods>
         </Class>
@@ -39,78 +427,37 @@
               <Summary numSequencePoints="7" visitedSequencePoints="7" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
               <MetadataToken />
               <Name>System.Void Df.Magalu.Challenge.Acl.ProductLabsAcl/&lt;GetProductById&gt;d__3::MoveNext()</Name>
-              <FileRef uid="1" />
+              <FileRef uid="5" />
               <SequencePoints>
-                <SequencePoint vc="1" uspid="26" ordinal="0" sl="26" sc="1" el="26" ec="2" bec="0" bev="0" fileid="1" />
-                <SequencePoint vc="1" uspid="27" ordinal="1" sl="27" sc="1" el="27" ec="2" bec="0" bev="0" fileid="1" />
-                <SequencePoint vc="1" uspid="28" ordinal="2" sl="28" sc="1" el="28" ec="2" bec="0" bev="0" fileid="1" />
-                <SequencePoint vc="1" uspid="29" ordinal="3" sl="29" sc="1" el="29" ec="2" bec="0" bev="0" fileid="1" />
-                <SequencePoint vc="1" uspid="31" ordinal="4" sl="31" sc="1" el="31" ec="2" bec="0" bev="0" fileid="1" />
-                <SequencePoint vc="1" uspid="32" ordinal="5" sl="32" sc="1" el="32" ec="2" bec="0" bev="0" fileid="1" />
-                <SequencePoint vc="1" uspid="33" ordinal="6" sl="33" sc="1" el="33" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="26" ordinal="0" sl="26" sc="1" el="26" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="1" uspid="27" ordinal="1" sl="27" sc="1" el="27" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="1" uspid="28" ordinal="2" sl="28" sc="1" el="28" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="1" uspid="29" ordinal="3" sl="29" sc="1" el="29" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="1" uspid="31" ordinal="4" sl="31" sc="1" el="31" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="1" uspid="32" ordinal="5" sl="32" sc="1" el="32" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="1" uspid="33" ordinal="6" sl="33" sc="1" el="33" ec="2" bec="0" bev="0" fileid="5" />
               </SequencePoints>
               <BranchPoints>
-                <BranchPoint vc="1" uspid="27" ordinal="1" path="1" offset="81" offsetend="151" sl="27" fileid="1" />
+                <BranchPoint vc="1" uspid="27" ordinal="1" path="1" offset="81" offsetend="151" sl="27" fileid="5" />
               </BranchPoints>
-              <MethodPoint vc="7" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="26" ec="1" el="33" bec="0" bev="0" fileid="1" xmlns:p8="xsi" />
+              <MethodPoint vc="7" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="26" ec="1" el="33" bec="0" bev="0" fileid="5" xmlns:p8="xsi" />
             </Method>
           </Methods>
         </Class>
       </Classes>
     </Module>
-    <Module hash="0B9C4D40-7F1D-40E6-8F81-CCD56A775C8F">
+    <Module hash="6F448563-DEB5-485C-AF38-3344382151BB">
       <ModulePath>Df.Magalu.Challenge.Domain.dll</ModulePath>
-      <ModuleTime>2019-10-31T03:38:11</ModuleTime>
+      <ModuleTime>2019-12-27T06:37:59</ModuleTime>
       <ModuleName>Df.Magalu.Challenge.Domain</ModuleName>
       <Files>
-        <File uid="2" fullPath="/home/travis/build/grfgabrielti/Df.Magalu.Challenge/Df.Magalu.Challenge.Domain/Service/ClientDomainService.cs" />
-        <File uid="3" fullPath="/home/travis/build/grfgabrielti/Df.Magalu.Challenge/Df.Magalu.Challenge.Domain/Factories/ClientFactory.cs" />
-        <File uid="4" fullPath="/home/travis/build/grfgabrielti/Df.Magalu.Challenge/Df.Magalu.Challenge.Domain/Entity/BaseEntity.cs" />
-        <File uid="5" fullPath="/home/travis/build/grfgabrielti/Df.Magalu.Challenge/Df.Magalu.Challenge.Domain/Entity/Client.cs" />
-        <File uid="6" fullPath="/home/travis/build/grfgabrielti/Df.Magalu.Challenge/Df.Magalu.Challenge.Domain/Entity/Product.cs" />
-        <File uid="7" fullPath="/home/travis/build/grfgabrielti/Df.Magalu.Challenge/Df.Magalu.Challenge.Domain/Dto/ProductLabsDto.cs" />
+        <File uid="6" fullPath="/home/travis/build/grfgabrielti/Df.Magalu.Challenge/Df.Magalu.Challenge.Domain/Factories/ClientFactory.cs" />
+        <File uid="7" fullPath="/home/travis/build/grfgabrielti/Df.Magalu.Challenge/Df.Magalu.Challenge.Domain/Entity/BaseEntity.cs" />
+        <File uid="8" fullPath="/home/travis/build/grfgabrielti/Df.Magalu.Challenge/Df.Magalu.Challenge.Domain/Entity/Client.cs" />
+        <File uid="9" fullPath="/home/travis/build/grfgabrielti/Df.Magalu.Challenge/Df.Magalu.Challenge.Domain/Entity/Product.cs" />
+        <File uid="10" fullPath="/home/travis/build/grfgabrielti/Df.Magalu.Challenge/Df.Magalu.Challenge.Domain/Dto/ProductLabsDto.cs" />
       </Files>
       <Classes>
-        <Class>
-          <Summary numSequencePoints="4" visitedSequencePoints="4" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
-          <FullName>Df.Magalu.Challenge.Domain.Service.ClientDomainService</FullName>
-          <Methods>
-            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
-              <Summary numSequencePoints="4" visitedSequencePoints="4" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
-              <MetadataToken />
-              <Name>System.Void Df.Magalu.Challenge.Domain.Service.ClientDomainService::.ctor(Df.Magalu.Challenge.Domain.Interfaces.Factories.IClientFactory)</Name>
-              <FileRef uid="2" />
-              <SequencePoints>
-                <SequencePoint vc="5" uspid="15" ordinal="0" sl="15" sc="1" el="15" ec="2" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="5" uspid="16" ordinal="1" sl="16" sc="1" el="16" ec="2" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="5" uspid="17" ordinal="2" sl="17" sc="1" el="17" ec="2" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="5" uspid="18" ordinal="3" sl="18" sc="1" el="18" ec="2" bec="0" bev="0" fileid="2" />
-              </SequencePoints>
-              <BranchPoints />
-              <MethodPoint vc="4" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="15" ec="1" el="18" bec="0" bev="0" fileid="2" xmlns:p8="xsi" />
-            </Method>
-          </Methods>
-        </Class>
-        <Class>
-          <Summary numSequencePoints="4" visitedSequencePoints="4" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
-          <FullName>Df.Magalu.Challenge.Domain.Service.ClientDomainService/&lt;Create&gt;d__2</FullName>
-          <Methods>
-            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
-              <Summary numSequencePoints="4" visitedSequencePoints="4" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
-              <MetadataToken />
-              <Name>System.Void Df.Magalu.Challenge.Domain.Service.ClientDomainService/&lt;Create&gt;d__2::MoveNext()</Name>
-              <FileRef uid="2" />
-              <SequencePoints>
-                <SequencePoint vc="5" uspid="20" ordinal="0" sl="20" sc="1" el="20" ec="2" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="5" uspid="21" ordinal="1" sl="21" sc="1" el="21" ec="2" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="2" uspid="22" ordinal="2" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="2" uspid="23" ordinal="3" sl="23" sc="1" el="23" ec="2" bec="0" bev="0" fileid="2" />
-              </SequencePoints>
-              <BranchPoints />
-              <MethodPoint vc="4" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="20" ec="1" el="23" bec="0" bev="0" fileid="2" xmlns:p8="xsi" />
-            </Method>
-          </Methods>
-        </Class>
         <Class>
           <Summary numSequencePoints="4" visitedSequencePoints="4" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
           <FullName>Df.Magalu.Challenge.Domain.Factories.ClientFactory</FullName>
@@ -119,15 +466,15 @@
               <Summary numSequencePoints="4" visitedSequencePoints="4" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
               <MetadataToken />
               <Name>Df.Magalu.Challenge.Domain.Interfaces.Entity.IClient Df.Magalu.Challenge.Domain.Factories.ClientFactory::Create(System.String,System.String)</Name>
-              <FileRef uid="3" />
+              <FileRef uid="6" />
               <SequencePoints>
-                <SequencePoint vc="9" uspid="13" ordinal="0" sl="13" sc="1" el="13" ec="2" bec="0" bev="0" fileid="3" />
-                <SequencePoint vc="9" uspid="14" ordinal="1" sl="14" sc="1" el="14" ec="2" bec="0" bev="0" fileid="3" />
-                <SequencePoint vc="3" uspid="15" ordinal="2" sl="15" sc="1" el="15" ec="2" bec="0" bev="0" fileid="3" />
-                <SequencePoint vc="3" uspid="16" ordinal="3" sl="16" sc="1" el="16" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="5" uspid="13" ordinal="0" sl="13" sc="1" el="13" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="5" uspid="14" ordinal="1" sl="14" sc="1" el="14" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="2" uspid="15" ordinal="2" sl="15" sc="1" el="15" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="2" uspid="16" ordinal="3" sl="16" sc="1" el="16" ec="2" bec="0" bev="0" fileid="6" />
               </SequencePoints>
               <BranchPoints />
-              <MethodPoint vc="4" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="13" ec="1" el="16" bec="0" bev="0" fileid="3" xmlns:p8="xsi" />
+              <MethodPoint vc="4" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="13" ec="1" el="16" bec="0" bev="0" fileid="6" xmlns:p8="xsi" />
             </Method>
           </Methods>
         </Class>
@@ -139,23 +486,23 @@
               <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken />
               <Name>System.Guid Df.Magalu.Challenge.Domain.Entity.BaseEntity`1::get__id()</Name>
-              <FileRef uid="4" />
+              <FileRef uid="7" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="10" ordinal="0" sl="10" sc="1" el="10" ec="2" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="0" uspid="10" ordinal="0" sl="10" sc="1" el="10" ec="2" bec="0" bev="0" fileid="7" />
               </SequencePoints>
               <BranchPoints />
-              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="10" ec="1" el="10" bec="0" bev="0" fileid="4" xmlns:p8="xsi" />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="10" ec="1" el="10" bec="0" bev="0" fileid="7" xmlns:p8="xsi" />
             </Method>
             <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
               <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken />
               <Name>System.DateTime Df.Magalu.Challenge.Domain.Entity.BaseEntity`1::get_CreationDate()</Name>
-              <FileRef uid="4" />
+              <FileRef uid="7" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="12" ordinal="0" sl="12" sc="1" el="12" ec="2" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="0" uspid="12" ordinal="0" sl="12" sc="1" el="12" ec="2" bec="0" bev="0" fileid="7" />
               </SequencePoints>
               <BranchPoints />
-              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="12" ec="1" el="12" bec="0" bev="0" fileid="4" xmlns:p8="xsi" />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="12" ec="1" el="12" bec="0" bev="0" fileid="7" xmlns:p8="xsi" />
             </Method>
           </Methods>
         </Class>
@@ -167,123 +514,123 @@
               <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
               <MetadataToken />
               <Name>System.Guid Df.Magalu.Challenge.Domain.Entity.Client::get__id()</Name>
-              <FileRef uid="5" />
+              <FileRef uid="8" />
               <SequencePoints>
-                <SequencePoint vc="15" uspid="10" ordinal="0" sl="10" sc="1" el="10" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="11" uspid="10" ordinal="0" sl="10" sc="1" el="10" ec="2" bec="0" bev="0" fileid="8" />
               </SequencePoints>
               <BranchPoints />
-              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="10" ec="1" el="10" bec="0" bev="0" fileid="5" xmlns:p8="xsi" />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="10" ec="1" el="10" bec="0" bev="0" fileid="8" xmlns:p8="xsi" />
             </Method>
             <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
               <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
               <MetadataToken />
               <Name>System.DateTime Df.Magalu.Challenge.Domain.Entity.Client::get_CreationDate()</Name>
-              <FileRef uid="5" />
+              <FileRef uid="8" />
               <SequencePoints>
-                <SequencePoint vc="15" uspid="11" ordinal="0" sl="11" sc="1" el="11" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="11" uspid="11" ordinal="0" sl="11" sc="1" el="11" ec="2" bec="0" bev="0" fileid="8" />
               </SequencePoints>
               <BranchPoints />
-              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="11" ec="1" el="11" bec="0" bev="0" fileid="5" xmlns:p8="xsi" />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="11" ec="1" el="11" bec="0" bev="0" fileid="8" xmlns:p8="xsi" />
             </Method>
             <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
               <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
               <MetadataToken />
               <Name>System.String Df.Magalu.Challenge.Domain.Entity.Client::get_Name()</Name>
-              <FileRef uid="5" />
+              <FileRef uid="8" />
               <SequencePoints>
-                <SequencePoint vc="12" uspid="13" ordinal="0" sl="13" sc="1" el="13" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="9" uspid="13" ordinal="0" sl="13" sc="1" el="13" ec="2" bec="0" bev="0" fileid="8" />
               </SequencePoints>
               <BranchPoints />
-              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="13" ec="1" el="13" bec="0" bev="0" fileid="5" xmlns:p8="xsi" />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="13" ec="1" el="13" bec="0" bev="0" fileid="8" xmlns:p8="xsi" />
             </Method>
             <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
               <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
               <MetadataToken />
               <Name>System.String Df.Magalu.Challenge.Domain.Entity.Client::get_Email()</Name>
-              <FileRef uid="5" />
+              <FileRef uid="8" />
               <SequencePoints>
-                <SequencePoint vc="9" uspid="14" ordinal="0" sl="14" sc="1" el="14" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="7" uspid="14" ordinal="0" sl="14" sc="1" el="14" ec="2" bec="0" bev="0" fileid="8" />
               </SequencePoints>
               <BranchPoints />
-              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="3" offset="3" sc="0" sl="14" ec="1" el="14" bec="0" bev="0" fileid="5" xmlns:p8="xsi" />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="3" offset="3" sc="0" sl="14" ec="1" el="14" bec="0" bev="0" fileid="8" xmlns:p8="xsi" />
             </Method>
             <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
               <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
               <MetadataToken />
               <Name>System.Collections.Generic.List`1&lt;Df.Magalu.Challenge.Domain.Entity.Product&gt; Df.Magalu.Challenge.Domain.Entity.Client::get_FavoritesProducts()</Name>
-              <FileRef uid="5" />
+              <FileRef uid="8" />
               <SequencePoints>
-                <SequencePoint vc="8" uspid="15" ordinal="0" sl="15" sc="1" el="15" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="7" uspid="15" ordinal="0" sl="15" sc="1" el="15" ec="2" bec="0" bev="0" fileid="8" />
               </SequencePoints>
               <BranchPoints />
-              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="4" offset="4" sc="0" sl="15" ec="1" el="15" bec="0" bev="0" fileid="5" xmlns:p8="xsi" />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="4" offset="4" sc="0" sl="15" ec="1" el="15" bec="0" bev="0" fileid="8" xmlns:p8="xsi" />
             </Method>
             <Method cyclomaticComplexity="2" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
               <Summary numSequencePoints="5" visitedSequencePoints="5" numBranchPoints="2" visitedBranchPoints="2" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
               <MetadataToken />
               <Name>System.Void Df.Magalu.Challenge.Domain.Entity.Client::DefineNome(System.String)</Name>
-              <FileRef uid="5" />
+              <FileRef uid="8" />
               <SequencePoints>
-                <SequencePoint vc="14" uspid="28" ordinal="0" sl="28" sc="1" el="28" ec="2" bec="0" bev="0" fileid="5" />
-                <SequencePoint vc="14" uspid="30" ordinal="1" sl="30" sc="1" el="30" ec="2" bec="0" bev="0" fileid="5" />
-                <SequencePoint vc="6" uspid="31" ordinal="2" sl="31" sc="1" el="31" ec="2" bec="0" bev="0" fileid="5" />
-                <SequencePoint vc="8" uspid="33" ordinal="3" sl="33" sc="1" el="33" ec="2" bec="0" bev="0" fileid="5" />
-                <SequencePoint vc="8" uspid="34" ordinal="4" sl="34" sc="1" el="34" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="10" uspid="28" ordinal="0" sl="28" sc="1" el="28" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="10" uspid="30" ordinal="1" sl="30" sc="1" el="30" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="4" uspid="31" ordinal="2" sl="31" sc="1" el="31" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="6" uspid="33" ordinal="3" sl="33" sc="1" el="33" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="6" uspid="34" ordinal="4" sl="34" sc="1" el="34" ec="2" bec="0" bev="0" fileid="8" />
               </SequencePoints>
               <BranchPoints>
-                <BranchPoint vc="6" uspid="30" ordinal="0" path="0" offset="9" offsetend="11" sl="30" fileid="5" />
-                <BranchPoint vc="8" uspid="30" ordinal="1" path="1" offset="9" offsetend="22" sl="30" fileid="5" />
+                <BranchPoint vc="4" uspid="30" ordinal="0" path="0" offset="9" offsetend="11" sl="30" fileid="8" />
+                <BranchPoint vc="6" uspid="30" ordinal="1" path="1" offset="9" offsetend="22" sl="30" fileid="8" />
               </BranchPoints>
-              <MethodPoint vc="5" uspid="0" p8:type="SequencePoint" ordinal="5" offset="5" sc="0" sl="28" ec="1" el="34" bec="0" bev="0" fileid="5" xmlns:p8="xsi" />
+              <MethodPoint vc="5" uspid="0" p8:type="SequencePoint" ordinal="5" offset="5" sc="0" sl="28" ec="1" el="34" bec="0" bev="0" fileid="8" xmlns:p8="xsi" />
             </Method>
             <Method cyclomaticComplexity="2" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
               <Summary numSequencePoints="5" visitedSequencePoints="5" numBranchPoints="2" visitedBranchPoints="2" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
               <MetadataToken />
               <Name>System.Void Df.Magalu.Challenge.Domain.Entity.Client::DefineEmail(System.String)</Name>
-              <FileRef uid="5" />
+              <FileRef uid="8" />
               <SequencePoints>
-                <SequencePoint vc="8" uspid="36" ordinal="0" sl="36" sc="1" el="36" ec="2" bec="0" bev="0" fileid="5" />
-                <SequencePoint vc="8" uspid="38" ordinal="1" sl="38" sc="1" el="38" ec="2" bec="0" bev="0" fileid="5" />
-                <SequencePoint vc="3" uspid="39" ordinal="2" sl="39" sc="1" el="39" ec="2" bec="0" bev="0" fileid="5" />
-                <SequencePoint vc="5" uspid="41" ordinal="3" sl="41" sc="1" el="41" ec="2" bec="0" bev="0" fileid="5" />
-                <SequencePoint vc="5" uspid="42" ordinal="4" sl="42" sc="1" el="42" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="6" uspid="36" ordinal="0" sl="36" sc="1" el="36" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="6" uspid="38" ordinal="1" sl="38" sc="1" el="38" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="2" uspid="39" ordinal="2" sl="39" sc="1" el="39" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="4" uspid="41" ordinal="3" sl="41" sc="1" el="41" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="4" uspid="42" ordinal="4" sl="42" sc="1" el="42" ec="2" bec="0" bev="0" fileid="8" />
               </SequencePoints>
               <BranchPoints>
-                <BranchPoint vc="3" uspid="38" ordinal="0" path="0" offset="9" offsetend="11" sl="38" fileid="5" />
-                <BranchPoint vc="5" uspid="38" ordinal="1" path="1" offset="9" offsetend="22" sl="38" fileid="5" />
+                <BranchPoint vc="2" uspid="38" ordinal="0" path="0" offset="9" offsetend="11" sl="38" fileid="8" />
+                <BranchPoint vc="4" uspid="38" ordinal="1" path="1" offset="9" offsetend="22" sl="38" fileid="8" />
               </BranchPoints>
-              <MethodPoint vc="5" uspid="0" p8:type="SequencePoint" ordinal="6" offset="6" sc="0" sl="36" ec="1" el="42" bec="0" bev="0" fileid="5" xmlns:p8="xsi" />
+              <MethodPoint vc="5" uspid="0" p8:type="SequencePoint" ordinal="6" offset="6" sc="0" sl="36" ec="1" el="42" bec="0" bev="0" fileid="8" xmlns:p8="xsi" />
             </Method>
             <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
               <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
               <MetadataToken />
               <Name>System.Void Df.Magalu.Challenge.Domain.Entity.Client::AddFavoriteProduct(Df.Magalu.Challenge.Domain.Entity.Product)</Name>
-              <FileRef uid="5" />
+              <FileRef uid="8" />
               <SequencePoints>
-                <SequencePoint vc="1" uspid="44" ordinal="0" sl="44" sc="1" el="44" ec="2" bec="0" bev="0" fileid="5" />
-                <SequencePoint vc="1" uspid="45" ordinal="1" sl="45" sc="1" el="45" ec="2" bec="0" bev="0" fileid="5" />
-                <SequencePoint vc="1" uspid="46" ordinal="2" sl="46" sc="1" el="46" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="1" uspid="44" ordinal="0" sl="44" sc="1" el="44" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="1" uspid="45" ordinal="1" sl="45" sc="1" el="45" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="1" uspid="46" ordinal="2" sl="46" sc="1" el="46" ec="2" bec="0" bev="0" fileid="8" />
               </SequencePoints>
               <BranchPoints />
-              <MethodPoint vc="3" uspid="0" p8:type="SequencePoint" ordinal="7" offset="7" sc="0" sl="44" ec="1" el="46" bec="0" bev="0" fileid="5" xmlns:p8="xsi" />
+              <MethodPoint vc="3" uspid="0" p8:type="SequencePoint" ordinal="7" offset="7" sc="0" sl="44" ec="1" el="46" bec="0" bev="0" fileid="8" xmlns:p8="xsi" />
             </Method>
             <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
               <Summary numSequencePoints="8" visitedSequencePoints="8" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
               <MetadataToken />
               <Name>System.Void Df.Magalu.Challenge.Domain.Entity.Client::.ctor(System.String,System.String)</Name>
-              <FileRef uid="5" />
+              <FileRef uid="8" />
               <SequencePoints>
-                <SequencePoint vc="14" uspid="18" ordinal="0" sl="18" sc="1" el="18" ec="2" bec="0" bev="0" fileid="5" />
-                <SequencePoint vc="14" uspid="19" ordinal="1" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="5" />
-                <SequencePoint vc="14" uspid="20" ordinal="2" sl="20" sc="1" el="20" ec="2" bec="0" bev="0" fileid="5" />
-                <SequencePoint vc="14" uspid="21" ordinal="3" sl="21" sc="1" el="21" ec="2" bec="0" bev="0" fileid="5" />
-                <SequencePoint vc="14" uspid="23" ordinal="4" sl="23" sc="1" el="23" ec="2" bec="0" bev="0" fileid="5" />
-                <SequencePoint vc="8" uspid="24" ordinal="5" sl="24" sc="1" el="24" ec="2" bec="0" bev="0" fileid="5" />
-                <SequencePoint vc="5" uspid="25" ordinal="6" sl="25" sc="1" el="25" ec="2" bec="0" bev="0" fileid="5" />
-                <SequencePoint vc="5" uspid="26" ordinal="7" sl="26" sc="1" el="26" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="10" uspid="18" ordinal="0" sl="18" sc="1" el="18" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="10" uspid="19" ordinal="1" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="10" uspid="20" ordinal="2" sl="20" sc="1" el="20" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="10" uspid="21" ordinal="3" sl="21" sc="1" el="21" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="10" uspid="23" ordinal="4" sl="23" sc="1" el="23" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="6" uspid="24" ordinal="5" sl="24" sc="1" el="24" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="4" uspid="25" ordinal="6" sl="25" sc="1" el="25" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="4" uspid="26" ordinal="7" sl="26" sc="1" el="26" ec="2" bec="0" bev="0" fileid="8" />
               </SequencePoints>
               <BranchPoints />
-              <MethodPoint vc="8" uspid="0" p8:type="SequencePoint" ordinal="8" offset="8" sc="0" sl="18" ec="1" el="26" bec="0" bev="0" fileid="5" xmlns:p8="xsi" />
+              <MethodPoint vc="8" uspid="0" p8:type="SequencePoint" ordinal="8" offset="8" sc="0" sl="18" ec="1" el="26" bec="0" bev="0" fileid="8" xmlns:p8="xsi" />
             </Method>
           </Methods>
         </Class>
@@ -295,80 +642,80 @@
               <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken />
               <Name>System.Decimal Df.Magalu.Challenge.Domain.Entity.Product::get_Price()</Name>
-              <FileRef uid="6" />
+              <FileRef uid="9" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="9" ordinal="0" sl="9" sc="1" el="9" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="9" ordinal="0" sl="9" sc="1" el="9" ec="2" bec="0" bev="0" fileid="9" />
               </SequencePoints>
               <BranchPoints />
-              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="9" ec="1" el="9" bec="0" bev="0" fileid="6" xmlns:p8="xsi" />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="9" ec="1" el="9" bec="0" bev="0" fileid="9" xmlns:p8="xsi" />
             </Method>
             <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
               <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken />
               <Name>System.String Df.Magalu.Challenge.Domain.Entity.Product::get_Image()</Name>
-              <FileRef uid="6" />
+              <FileRef uid="9" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="10" ordinal="0" sl="10" sc="1" el="10" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="10" ordinal="0" sl="10" sc="1" el="10" ec="2" bec="0" bev="0" fileid="9" />
               </SequencePoints>
               <BranchPoints />
-              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="10" ec="1" el="10" bec="0" bev="0" fileid="6" xmlns:p8="xsi" />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="10" ec="1" el="10" bec="0" bev="0" fileid="9" xmlns:p8="xsi" />
             </Method>
             <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
               <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken />
               <Name>System.String Df.Magalu.Challenge.Domain.Entity.Product::get_Brand()</Name>
-              <FileRef uid="6" />
+              <FileRef uid="9" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="11" ordinal="0" sl="11" sc="1" el="11" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="11" ordinal="0" sl="11" sc="1" el="11" ec="2" bec="0" bev="0" fileid="9" />
               </SequencePoints>
               <BranchPoints />
-              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="11" ec="1" el="11" bec="0" bev="0" fileid="6" xmlns:p8="xsi" />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="11" ec="1" el="11" bec="0" bev="0" fileid="9" xmlns:p8="xsi" />
             </Method>
             <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
               <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken />
               <Name>System.String Df.Magalu.Challenge.Domain.Entity.Product::get_Id()</Name>
-              <FileRef uid="6" />
+              <FileRef uid="9" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="12" ordinal="0" sl="12" sc="1" el="12" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="12" ordinal="0" sl="12" sc="1" el="12" ec="2" bec="0" bev="0" fileid="9" />
               </SequencePoints>
               <BranchPoints />
-              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="3" offset="3" sc="0" sl="12" ec="1" el="12" bec="0" bev="0" fileid="6" xmlns:p8="xsi" />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="3" offset="3" sc="0" sl="12" ec="1" el="12" bec="0" bev="0" fileid="9" xmlns:p8="xsi" />
             </Method>
             <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
               <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken />
               <Name>System.String Df.Magalu.Challenge.Domain.Entity.Product::get_Title()</Name>
-              <FileRef uid="6" />
+              <FileRef uid="9" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="13" ordinal="0" sl="13" sc="1" el="13" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="13" ordinal="0" sl="13" sc="1" el="13" ec="2" bec="0" bev="0" fileid="9" />
               </SequencePoints>
               <BranchPoints />
-              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="4" offset="4" sc="0" sl="13" ec="1" el="13" bec="0" bev="0" fileid="6" xmlns:p8="xsi" />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="4" offset="4" sc="0" sl="13" ec="1" el="13" bec="0" bev="0" fileid="9" xmlns:p8="xsi" />
             </Method>
             <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
               <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken />
               <Name>System.String Df.Magalu.Challenge.Domain.Entity.Product::get_ReviewScore()</Name>
-              <FileRef uid="6" />
+              <FileRef uid="9" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="14" ordinal="0" sl="14" sc="1" el="14" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="14" ordinal="0" sl="14" sc="1" el="14" ec="2" bec="0" bev="0" fileid="9" />
               </SequencePoints>
               <BranchPoints />
-              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="5" offset="5" sc="0" sl="14" ec="1" el="14" bec="0" bev="0" fileid="6" xmlns:p8="xsi" />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="5" offset="5" sc="0" sl="14" ec="1" el="14" bec="0" bev="0" fileid="9" xmlns:p8="xsi" />
             </Method>
             <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
               <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
               <MetadataToken />
               <Name>System.Void Df.Magalu.Challenge.Domain.Entity.Product::.ctor()</Name>
-              <FileRef uid="6" />
+              <FileRef uid="9" />
               <SequencePoints>
-                <SequencePoint vc="2" uspid="16" ordinal="0" sl="16" sc="1" el="16" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="2" uspid="17" ordinal="1" sl="17" sc="1" el="17" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="2" uspid="19" ordinal="2" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="2" uspid="16" ordinal="0" sl="16" sc="1" el="16" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="2" uspid="17" ordinal="1" sl="17" sc="1" el="17" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="2" uspid="19" ordinal="2" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="9" />
               </SequencePoints>
               <BranchPoints />
-              <MethodPoint vc="3" uspid="0" p8:type="SequencePoint" ordinal="6" offset="6" sc="0" sl="16" ec="1" el="19" bec="0" bev="0" fileid="6" xmlns:p8="xsi" />
+              <MethodPoint vc="3" uspid="0" p8:type="SequencePoint" ordinal="6" offset="6" sc="0" sl="16" ec="1" el="19" bec="0" bev="0" fileid="9" xmlns:p8="xsi" />
             </Method>
           </Methods>
         </Class>
@@ -380,120 +727,122 @@
               <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken />
               <Name>System.Decimal Df.Magalu.Challenge.Domain.Dto.ProductLabsDto::get_price()</Name>
-              <FileRef uid="7" />
+              <FileRef uid="10" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="9" ordinal="0" sl="9" sc="1" el="9" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="9" ordinal="0" sl="9" sc="1" el="9" ec="2" bec="0" bev="0" fileid="10" />
               </SequencePoints>
               <BranchPoints />
-              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="9" ec="1" el="9" bec="0" bev="0" fileid="7" xmlns:p8="xsi" />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="9" ec="1" el="9" bec="0" bev="0" fileid="10" xmlns:p8="xsi" />
             </Method>
             <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
               <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken />
               <Name>System.String Df.Magalu.Challenge.Domain.Dto.ProductLabsDto::get_image()</Name>
-              <FileRef uid="7" />
+              <FileRef uid="10" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="10" ordinal="0" sl="10" sc="1" el="10" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="10" ordinal="0" sl="10" sc="1" el="10" ec="2" bec="0" bev="0" fileid="10" />
               </SequencePoints>
               <BranchPoints />
-              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="10" ec="1" el="10" bec="0" bev="0" fileid="7" xmlns:p8="xsi" />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="10" ec="1" el="10" bec="0" bev="0" fileid="10" xmlns:p8="xsi" />
             </Method>
             <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
               <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken />
               <Name>System.String Df.Magalu.Challenge.Domain.Dto.ProductLabsDto::get_brand()</Name>
-              <FileRef uid="7" />
+              <FileRef uid="10" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="11" ordinal="0" sl="11" sc="1" el="11" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="11" ordinal="0" sl="11" sc="1" el="11" ec="2" bec="0" bev="0" fileid="10" />
               </SequencePoints>
               <BranchPoints />
-              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="11" ec="1" el="11" bec="0" bev="0" fileid="7" xmlns:p8="xsi" />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="11" ec="1" el="11" bec="0" bev="0" fileid="10" xmlns:p8="xsi" />
             </Method>
             <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
               <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken />
               <Name>System.String Df.Magalu.Challenge.Domain.Dto.ProductLabsDto::get_id()</Name>
-              <FileRef uid="7" />
+              <FileRef uid="10" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="12" ordinal="0" sl="12" sc="1" el="12" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="12" ordinal="0" sl="12" sc="1" el="12" ec="2" bec="0" bev="0" fileid="10" />
               </SequencePoints>
               <BranchPoints />
-              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="3" offset="3" sc="0" sl="12" ec="1" el="12" bec="0" bev="0" fileid="7" xmlns:p8="xsi" />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="3" offset="3" sc="0" sl="12" ec="1" el="12" bec="0" bev="0" fileid="10" xmlns:p8="xsi" />
             </Method>
             <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
               <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken />
               <Name>System.String Df.Magalu.Challenge.Domain.Dto.ProductLabsDto::get_title()</Name>
-              <FileRef uid="7" />
+              <FileRef uid="10" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="13" ordinal="0" sl="13" sc="1" el="13" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="13" ordinal="0" sl="13" sc="1" el="13" ec="2" bec="0" bev="0" fileid="10" />
               </SequencePoints>
               <BranchPoints />
-              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="4" offset="4" sc="0" sl="13" ec="1" el="13" bec="0" bev="0" fileid="7" xmlns:p8="xsi" />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="4" offset="4" sc="0" sl="13" ec="1" el="13" bec="0" bev="0" fileid="10" xmlns:p8="xsi" />
             </Method>
             <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
               <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken />
               <Name>System.String Df.Magalu.Challenge.Domain.Dto.ProductLabsDto::get_reviewScore()</Name>
-              <FileRef uid="7" />
+              <FileRef uid="10" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="14" ordinal="0" sl="14" sc="1" el="14" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="14" ordinal="0" sl="14" sc="1" el="14" ec="2" bec="0" bev="0" fileid="10" />
               </SequencePoints>
               <BranchPoints />
-              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="5" offset="5" sc="0" sl="14" ec="1" el="14" bec="0" bev="0" fileid="7" xmlns:p8="xsi" />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="5" offset="5" sc="0" sl="14" ec="1" el="14" bec="0" bev="0" fileid="10" xmlns:p8="xsi" />
             </Method>
           </Methods>
         </Class>
       </Classes>
     </Module>
-    <Module hash="69000947-D3AF-46C5-B771-976B7BB1ADC7">
+    <Module hash="AC72248F-0BAD-4AC5-819B-AC15A1234328">
       <ModulePath>Df.Magalu.Challenge.Service.dll</ModulePath>
-      <ModuleTime>2019-10-31T03:38:11</ModuleTime>
+      <ModuleTime>2019-12-27T06:37:59</ModuleTime>
       <ModuleName>Df.Magalu.Challenge.Service</ModuleName>
       <Files>
-        <File uid="8" fullPath="/home/travis/build/grfgabrielti/Df.Magalu.Challenge/Df.Magalu.Challenge.Service/ClientService.cs" />
-        <File uid="9" fullPath="/home/travis/build/grfgabrielti/Df.Magalu.Challenge/Df.Magalu.Challenge.Service/Requests/Client/ClientCreateRequest.cs" />
+        <File uid="11" fullPath="/home/travis/build/grfgabrielti/Df.Magalu.Challenge/Df.Magalu.Challenge.Service/ClientService.cs" />
+        <File uid="12" fullPath="/home/travis/build/grfgabrielti/Df.Magalu.Challenge/Df.Magalu.Challenge.Service/Requests/Client/ClientCreateRequest.cs" />
       </Files>
       <Classes>
         <Class>
-          <Summary numSequencePoints="4" visitedSequencePoints="4" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
+          <Summary numSequencePoints="6" visitedSequencePoints="6" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
           <FullName>Df.Magalu.Challenge.Service.ClientService</FullName>
           <Methods>
             <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
-              <Summary numSequencePoints="4" visitedSequencePoints="4" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <Summary numSequencePoints="6" visitedSequencePoints="6" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
               <MetadataToken />
-              <Name>System.Void Df.Magalu.Challenge.Service.ClientService::.ctor(Df.Magalu.Challenge.Domain.Interfaces.Service.IClientDomainService)</Name>
-              <FileRef uid="8" />
+              <Name>System.Void Df.Magalu.Challenge.Service.ClientService::.ctor(Df.Magalu.Challenge.Domain.Interfaces.Factories.IClientFactory,Df.Magalu.Challenge.Domain.Interfaces.Repositories.IUnitOfWork,Df.Magalu.Challenge.Domain.Interfaces.Repositories.IClientRepository)</Name>
+              <FileRef uid="11" />
               <SequencePoints>
-                <SequencePoint vc="1" uspid="16" ordinal="0" sl="16" sc="1" el="16" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="1" uspid="17" ordinal="1" sl="17" sc="1" el="17" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="1" uspid="18" ordinal="2" sl="18" sc="1" el="18" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="1" uspid="19" ordinal="3" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="1" uspid="20" ordinal="0" sl="20" sc="1" el="20" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="1" uspid="21" ordinal="1" sl="21" sc="1" el="21" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="1" uspid="22" ordinal="2" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="1" uspid="23" ordinal="3" sl="23" sc="1" el="23" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="1" uspid="24" ordinal="4" sl="24" sc="1" el="24" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="1" uspid="25" ordinal="5" sl="25" sc="1" el="25" ec="2" bec="0" bev="0" fileid="11" />
               </SequencePoints>
               <BranchPoints />
-              <MethodPoint vc="4" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="16" ec="1" el="19" bec="0" bev="0" fileid="8" xmlns:p8="xsi" />
+              <MethodPoint vc="6" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="20" ec="1" el="25" bec="0" bev="0" fileid="11" xmlns:p8="xsi" />
             </Method>
           </Methods>
         </Class>
         <Class>
-          <Summary numSequencePoints="4" visitedSequencePoints="4" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
-          <FullName>Df.Magalu.Challenge.Service.ClientService/&lt;Create&gt;d__2</FullName>
+          <Summary numSequencePoints="6" visitedSequencePoints="6" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
+          <FullName>Df.Magalu.Challenge.Service.ClientService/&lt;Create&gt;d__4</FullName>
           <Methods>
             <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
-              <Summary numSequencePoints="4" visitedSequencePoints="4" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <Summary numSequencePoints="6" visitedSequencePoints="6" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
               <MetadataToken />
-              <Name>System.Void Df.Magalu.Challenge.Service.ClientService/&lt;Create&gt;d__2::MoveNext()</Name>
-              <FileRef uid="8" />
+              <Name>System.Void Df.Magalu.Challenge.Service.ClientService/&lt;Create&gt;d__4::MoveNext()</Name>
+              <FileRef uid="11" />
               <SequencePoints>
-                <SequencePoint vc="1" uspid="22" ordinal="0" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="1" uspid="23" ordinal="1" sl="23" sc="1" el="23" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="1" uspid="24" ordinal="2" sl="24" sc="1" el="24" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="1" uspid="25" ordinal="3" sl="25" sc="1" el="25" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="1" uspid="28" ordinal="0" sl="28" sc="1" el="28" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="1" uspid="29" ordinal="1" sl="29" sc="1" el="29" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="1" uspid="30" ordinal="2" sl="30" sc="1" el="30" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="1" uspid="32" ordinal="3" sl="32" sc="1" el="32" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="1" uspid="33" ordinal="4" sl="33" sc="1" el="33" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="1" uspid="34" ordinal="5" sl="34" sc="1" el="34" ec="2" bec="0" bev="0" fileid="11" />
               </SequencePoints>
-              <BranchPoints>
-                <BranchPoint vc="1" uspid="23" ordinal="1" path="1" offset="66" offsetend="132" sl="23" fileid="8" />
-              </BranchPoints>
-              <MethodPoint vc="4" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="22" ec="1" el="25" bec="0" bev="0" fileid="8" xmlns:p8="xsi" />
+              <BranchPoints />
+              <MethodPoint vc="6" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="28" ec="1" el="34" bec="0" bev="0" fileid="11" xmlns:p8="xsi" />
             </Method>
           </Methods>
         </Class>
@@ -505,23 +854,23 @@
               <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
               <MetadataToken />
               <Name>System.String Df.Magalu.Challenge.Service.Requests.Client.ClientCreateRequest::get_Name()</Name>
-              <FileRef uid="9" />
+              <FileRef uid="12" />
               <SequencePoints>
-                <SequencePoint vc="3" uspid="9" ordinal="0" sl="9" sc="1" el="9" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="3" uspid="9" ordinal="0" sl="9" sc="1" el="9" ec="2" bec="0" bev="0" fileid="12" />
               </SequencePoints>
               <BranchPoints />
-              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="9" ec="1" el="9" bec="0" bev="0" fileid="9" xmlns:p8="xsi" />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="9" ec="1" el="9" bec="0" bev="0" fileid="12" xmlns:p8="xsi" />
             </Method>
             <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
               <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
               <MetadataToken />
               <Name>System.String Df.Magalu.Challenge.Service.Requests.Client.ClientCreateRequest::get_Email()</Name>
-              <FileRef uid="9" />
+              <FileRef uid="12" />
               <SequencePoints>
-                <SequencePoint vc="3" uspid="10" ordinal="0" sl="10" sc="1" el="10" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="3" uspid="10" ordinal="0" sl="10" sc="1" el="10" ec="2" bec="0" bev="0" fileid="12" />
               </SequencePoints>
               <BranchPoints />
-              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="10" ec="1" el="10" bec="0" bev="0" fileid="9" xmlns:p8="xsi" />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="10" ec="1" el="10" bec="0" bev="0" fileid="12" xmlns:p8="xsi" />
             </Method>
           </Methods>
         </Class>

@@ -46,6 +46,7 @@ namespace Df.Magalu.Challenge.Tests.Acl
             var result = await _productLabsAcl.GetProductById(productId);
 
             result.Should().NotBeNull();
+            _mapperMock.VerifyAll();
         }
     }
 }
