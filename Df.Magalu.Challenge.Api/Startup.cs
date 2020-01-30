@@ -17,6 +17,7 @@ using Df.Magalu.Challenge.Domain.Interfaces.Repositories;
 using Df.Magalu.Challenge.Data;
 using Df.Magalu.Challenge.Data.Context;
 using Df.Magalu.Challenge.Data.Repositories;
+using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 
 namespace Df.Magalu.Challenge.Api
 {
@@ -31,8 +32,15 @@ namespace Df.Magalu.Challenge.Api
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddOptions();
-            services.AddControllers();
+
+
+            services
+            .AddHealthChecks()
+            .AddMongoDb("mongodb://localhost:27017", "Magalu", "Magalu - DB 27017")
+            .Services
+            .AddOptions()
+            .AddControllers();
+
 
             services.AddSwaggerGen(c =>
             {
@@ -68,21 +76,24 @@ namespace Df.Magalu.Challenge.Api
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseSwagger();
-            app.UseSwaggerUI(c =>
+            app
+               .UseRouting()
+               .UseEndpoints(config =>
+               {
+                   config.MapHealthChecks("healthz", new HealthCheckOptions()
+                   {
+                       Predicate = _ => true,
+                   });
+                   config.MapDefaultControllerRoute();
+                   config.MapControllers();
+               })
+            .UseSwagger()
+            .UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Magalu Challege");
-            });
+            })
+            .UseAuthorization();
 
-
-            app.UseRouting();
-
-            app.UseAuthorization();
-
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllers();
-            });
         }
     }
 }
