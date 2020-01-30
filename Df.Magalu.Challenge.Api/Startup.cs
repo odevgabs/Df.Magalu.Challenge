@@ -36,7 +36,6 @@ namespace Df.Magalu.Challenge.Api
 
 
             services
-            .AddHealthChecksUI()
             .AddHealthChecks()
             .AddMongoDb("mongodb://localhost:27017", "Magalu", "Magalu - DB 27017")
             .Services
@@ -87,7 +86,6 @@ namespace Df.Magalu.Challenge.Api
                        Predicate = _ => true,
                        ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
                    });
-                   config.MapHealthChecksUI();
                    config.MapDefaultControllerRoute();
                    config.MapControllers();
                })
