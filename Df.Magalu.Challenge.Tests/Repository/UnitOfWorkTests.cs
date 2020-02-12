@@ -25,19 +25,19 @@ namespace Df.Magalu.Challenge.Tests.Repository
         }
 
         [Test]
-        public void ShouldCommitSuccess()
+        public async Task ShouldCommitSuccessAsync()
         {
             _mongoContextMock.Setup(x => x.SaveChanges()).Returns(Task.FromResult(1));
-            bool result = _unitOfWork.Commit();
+            bool result = await _unitOfWork.CommitAsync();
             result.Should().BeTrue();
             _mongoContextMock.VerifyAll();
         }
 
         [Test]
-        public void ShouldCommitNotSuccess()
+        public async Task ShouldCommitNotSuccessAsync()
         {
             _mongoContextMock.Setup(x => x.SaveChanges()).Returns(Task.FromResult(0));
-            bool result = _unitOfWork.Commit();
+            bool result = await _unitOfWork.CommitAsync();
             result.Should().BeFalse();
             _mongoContextMock.VerifyAll();
         }
