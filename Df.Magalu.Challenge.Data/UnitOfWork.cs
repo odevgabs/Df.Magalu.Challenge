@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Df.Magalu.Challenge.Data
 {
@@ -14,9 +15,9 @@ namespace Df.Magalu.Challenge.Data
             _context = context;
         }
 
-        public bool Commit()
+        public async Task<bool> CommitAsync()
         {
-            int changesResult = _context.SaveChanges().GetAwaiter().GetResult();
+            int changesResult = await _context.SaveChanges().ConfigureAwait(false);
             bool result = changesResult > 0;
             return result;
         }

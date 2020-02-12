@@ -29,7 +29,8 @@ namespace Df.Magalu.Challenge.Service
             IClient client = _clientFactory.Create(request.Name, request.Email);
             _clientRepository.Create(client);
 
-            _unitOfWork.Commit();
+            await _unitOfWork.CommitAsync().ConfigureAwait(false);
+            
             return client;
         }
     }

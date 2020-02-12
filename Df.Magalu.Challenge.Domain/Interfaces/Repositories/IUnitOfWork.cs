@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Text;
+using System.Threading.Tasks;
 
 namespace Df.Magalu.Challenge.Domain.Interfaces.Repositories
 {
     public interface IUnitOfWork
     {
-        bool Commit();
+        Task<bool> CommitAsync();
         void Dispose();
     }
 }

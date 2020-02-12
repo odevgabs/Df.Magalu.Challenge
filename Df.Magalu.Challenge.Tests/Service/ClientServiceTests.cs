@@ -55,7 +55,7 @@ namespace Df.Magalu.Challenge.Tests.Service
         [Test, TestCaseSource("clientCreateRequestValid")]
         public async Task ShouldCreateIClient(ClientCreateRequest clientCreateRequest)
         {
-            _unitOfWorkMock.Setup(x => x.Commit()).Returns(true);
+            _unitOfWorkMock.Setup(x => x.CommitAsync()).Returns(Task.FromResult(true));
 
             IClient client = await _clientService.Create(clientCreateRequest);
             client.Name.Should().Be(clientCreateRequest.Name);
