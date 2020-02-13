@@ -1,9 +1,11 @@
 ﻿using Df.Magalu.Challenge.Data;
 using Df.Magalu.Challenge.Data.Context;
+using Df.Magalu.Challenge.Domain.Entity;
 using Df.Magalu.Challenge.Domain.Factories;
 using Df.Magalu.Challenge.Domain.Interfaces.Entity;
 using Df.Magalu.Challenge.Domain.Interfaces.Factories;
 using Df.Magalu.Challenge.Domain.Interfaces.Repositories;
+using Df.Magalu.Challenge.Infrastructure.Exception;
 using Df.Magalu.Challenge.Service;
 using Df.Magalu.Challenge.Service.Interfaces;
 using Df.Magalu.Challenge.Service.Requests.Client;
@@ -29,15 +31,12 @@ namespace Df.Magalu.Challenge.Tests.Service
         [SetUp]
         public void Setup()
         {
-            _clientFactory = new ClientFactory();
-
             _configurationMock = new Mock<IConfiguration>();
             _configurationMock.Setup(x => x.GetSection(It.IsAny<string>()).GetSection(It.IsAny<string>()).Value).Returns("mongodb://localhost:27017");
 
-
             _unitOfWorkMock = new Mock<IUnitOfWork>();
-
             _clientRepositoryMock = new Mock<IClientRepository>();
+            _clientFactory = new ClientFactory();
 
             _clientService = new ClientService(_clientFactory, _unitOfWorkMock.Object, _clientRepositoryMock.Object);
         }
@@ -55,12 +54,25 @@ namespace Df.Magalu.Challenge.Tests.Service
         [Test, TestCaseSource("clientCreateRequestValid")]
         public async Task ShouldCreateIClient(ClientCreateRequest clientCreateRequest)
         {
-            _unitOfWorkMock.Setup(x => x.CommitAsync()).Returns(Task.FromResult(true));
-
+            _clientRepositoryMock.Setup(x =>x.GetByEmail(clientCreateRequest.Email)).Returns(Task.FromResult<IClient>(null));
             IClient client = await _clientService.Create(clientCreateRequest);
+            
             client.Name.Should().Be(clientCreateRequest.Name);
             client.Email.Should().Be(clientCreateRequest.Email);
-            _unitOfWorkMock.VerifyAll();
+            _unitOfWorkMock.Verify(x => x.CommitAsync(), Times.Once);
+        }
+
+        [Test, TestCaseSource("clientCreateRequestValid")]
+        public async Task ShouldNotInsertClientWenExists(ClientCreateRequest clientCreateRequest)
+        {
+            IClient clientExists = new Client(clientCreateRequest.Name, clientCreateRequest.Email);
+            _clientRepositoryMock.Setup(x =>x.GetByEmail(clientCreateRequest.Email)).Returns(Task.FromResult<IClient>(clientExists));
+
+            IClient client = await _clientService.Create(clientCreateRequest);
+
+            _unitOfWorkMock. VerifyNoOtherCalls();          
+            client.Name.Should().Be(clientCreateRequest.Name);
+            client.Email.Should().Be(clientCreateRequest.Email);
         }
     }
 }

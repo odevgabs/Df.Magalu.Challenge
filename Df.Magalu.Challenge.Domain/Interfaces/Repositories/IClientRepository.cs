@@ -1,12 +1,10 @@
-﻿using Df.Magalu.Challenge.Domain.Entity;
-using Df.Magalu.Challenge.Domain.Interfaces.Entity;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Df.Magalu.Challenge.Domain.Interfaces.Entity;
+using System.Threading.Tasks;
 
 namespace Df.Magalu.Challenge.Domain.Interfaces.Repositories
 {
     public interface IClientRepository: IRepository<IClient>
     {
+        Task<IClient> GetByEmail(string email);
     }
 }
