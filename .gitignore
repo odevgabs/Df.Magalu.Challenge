@@ -6,10 +6,11 @@
 *.user
 *.userosscache
 *.sln.docstates
+.vscode/
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
-
+Df.Magalu.Challenge.Api.xml
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
@@ -259,3 +260,5 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+
+*/healthchecksdb

@@ -1,7 +1,7 @@
 organization=4a55b61e6429536b76bcb2939f2f0308613a0851
 projectKey=grfgabrielti_Df.Magalu.Challenge
 serverUrl=https://sonarcloud.io
-serverVersion=8.0.0.3777
+serverVersion=8.0.0.4669
 dashboardUrl=https://sonarcloud.io/dashboard?id=grfgabrielti_Df.Magalu.Challenge
-ceTaskId=AW9GE8OgfqqXhafPUwfZ
-ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AW9GE8OgfqqXhafPUwfZ
+ceTaskId=AXBHIkkDrumzmeMs91o0
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AXBHIkkDrumzmeMs91o0
