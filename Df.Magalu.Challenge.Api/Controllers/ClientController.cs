@@ -10,17 +10,30 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Df.Magalu.Challenge.Api.Controllers
 {
+    /// <summary>
+    /// Api class
+    /// </summary>
     [Route("api/[controller]")]
     [ApiController]
     public class ClientController : ControllerBase
     {
 
         private readonly IClientService _clientService;
+
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="clientService"></param>
         public ClientController(IClientService clientService)
         {
             _clientService = clientService;
         }
 
+        /// <summary>
+        /// Used for create a new client 
+        /// </summary>
+        /// <param name="request"></param>
+        /// <returns></returns>
         [HttpPost]
         public async Task<IActionResult> Create(ClientCreateRequest request)
         {
@@ -35,7 +48,7 @@ namespace Df.Magalu.Challenge.Api.Controllers
             }
             catch (Exception ex)
             {
-                throw;
+                throw ex;
             }
         }
     }
