@@ -19,12 +19,17 @@ using Df.Magalu.Challenge.Data.Context;
 using Df.Magalu.Challenge.Data.Repositories;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using HealthChecks.UI.Client;
+using Df.Message.Broker.ServiceBus;
+using Df.Message.Broker.ServiceBus.Contracts;
+using Df.Magalu.Challenge.Domain.Interfaces.Entity;
 
 namespace Df.Magalu.Challenge.Api
 {
     public class Startup
     {
         public IConfiguration Configuration { get; }
+        private string _serviceBusConnectionString = "Endpoint=sb://dfmessage.servicebus.windows.net/;SharedAccessKeyName=meu_token;SharedAccessKey=+JWuf875RyazD1Cj8/ezM49LiPk08c+B0lm/I4nqx98=";
+        private string _topicName = "df.magalu.challenge";
 
         public Startup(IConfiguration configuration)
         {
@@ -68,6 +73,8 @@ namespace Df.Magalu.Challenge.Api
             services.AddTransient<IClientService, ClientService>();
 
 
+            var clientPublisher = new Publisher<IClient>(_serviceBusConnectionString, _topicName);
+            services.AddSingleton<IPublisher<IClient>>(clientPublisher);
 
         }
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

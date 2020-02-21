@@ -17,4 +17,9 @@
     <Folder Include="Responses\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="Df.Message.Broker.ServiceBus">
+      <HintPath>..\..\Df.Message.Broker\Df.Message.Broker.ServiceBus\bin\Debug\netcoreapp3.1\Df.Message.Broker.ServiceBus.dll</HintPath>
+    </Reference>
+  </ItemGroup>
 </Project>
