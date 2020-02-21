@@ -39,7 +39,7 @@ namespace Df.Magalu.Challenge.Tests.Service
 
             _clientRepositoryMock = new Mock<IClientRepository>();
 
-            _clientService = new ClientService(_clientFactory, _unitOfWorkMock.Object, _clientRepositoryMock.Object);
+            //_clientService = new ClientService(_clientFactory, _unitOfWorkMock.Object, _clientRepositoryMock.Object);
         }
 
         static IEnumerable<object[]> clientCreateRequestValid()

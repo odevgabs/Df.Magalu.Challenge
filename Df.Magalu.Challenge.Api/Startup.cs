@@ -19,8 +19,10 @@ using Df.Magalu.Challenge.Data.Context;
 using Df.Magalu.Challenge.Data.Repositories;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using HealthChecks.UI.Client;
-using Df.Message.Broker.ServiceBus;
-using Df.Message.Broker.ServiceBus.Contracts;
+using System;
+using System.Threading.Tasks;
+using Df.Message.Broker.ServiceBus.Standard.Contracts;
+using Df.Message.Broker.ServiceBus.Standard;
 using Df.Magalu.Challenge.Domain.Interfaces.Entity;
 
 namespace Df.Magalu.Challenge.Api
@@ -38,15 +40,12 @@ namespace Df.Magalu.Challenge.Api
 
         public void ConfigureServices(IServiceCollection services)
         {
-
-
             services
             .AddHealthChecks()
             .AddMongoDb("mongodb://localhost:27017", "Magalu", "Magalu - DB 27017")
             .Services
             .AddOptions()
             .AddControllers();
-
 
             services.AddSwaggerGen(c =>
             {
@@ -72,10 +71,15 @@ namespace Df.Magalu.Challenge.Api
 
             services.AddTransient<IClientService, ClientService>();
 
+            services.AddSingleton<IPublisher>(new Publisher(_serviceBusConnectionString, _topicName));
 
-            var clientPublisher = new Publisher<IClient>(_serviceBusConnectionString, _topicName);
-            services.AddSingleton<IPublisher<IClient>>(clientPublisher);
 
+            Task t3 = new Task( () => 
+            {
+                Console.WriteLine("Chupa fui executado");
+            });
+
+            new Consumer(_serviceBusConnectionString, _topicName).RegisterOnMessageHandlerAndReceiveMessages<IClient>(t3);
         }
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {

@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
@@ -20,6 +20,9 @@
   <ItemGroup>
     <Reference Include="Df.Message.Broker.ServiceBus">
       <HintPath>..\..\Df.Message.Broker\Df.Message.Broker.ServiceBus\bin\Debug\netcoreapp3.1\Df.Message.Broker.ServiceBus.dll</HintPath>
+    </Reference>
+    <Reference Include="Df.Message.Broker.ServiceBus.Standard">
+      <HintPath>..\..\Df.Message.Broker\Df.Message.Broker.ServiceBus.Standard\bin\Debug\netstandard2.0\Df.Message.Broker.ServiceBus.Standard.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>
