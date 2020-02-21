@@ -4,7 +4,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
-using Df.Magalu.Challenge.Domain.Entity;
 using Df.Magalu.Challenge.Domain.Dto;
 using AutoMapper;
 using Df.Magalu.Challenge.Service;
@@ -19,6 +18,8 @@ using Df.Magalu.Challenge.Data.Context;
 using Df.Magalu.Challenge.Data.Repositories;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using HealthChecks.UI.Client;
+using System;
+using Df.Magalu.Challenge.Domain.ValueObject;
 
 namespace Df.Magalu.Challenge.Api
 {
@@ -40,6 +41,7 @@ namespace Df.Magalu.Challenge.Api
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            var connection = Environment.GetEnvironmentVariable("Database");
         }
 
         /// <summary>

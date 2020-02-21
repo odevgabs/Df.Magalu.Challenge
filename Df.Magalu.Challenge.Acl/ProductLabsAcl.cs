@@ -2,11 +2,11 @@
 using System;
 using Flurl;
 using Flurl.Http;
-using Df.Magalu.Challenge.Domain.Entity;
 using System.Threading.Tasks;
 using Df.Magalu.Challenge.Domain.Interfaces.Acl;
 using Df.Magalu.Challenge.Domain.Dto;
 using AutoMapper;
+using Df.Magalu.Challenge.Domain.ValueObject;
 
 namespace Df.Magalu.Challenge.Acl
 {

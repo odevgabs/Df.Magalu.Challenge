@@ -1,18 +1,20 @@
 ﻿using Df.Magalu.Challenge.Domain.Entity;
 using Df.Magalu.Challenge.Domain.Interfaces.Entity;
+using Df.Magalu.Challenge.Domain.ValueObject;
+using Df.Magalu.Challenge.Tests.Fake;
 using FluentAssertions;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace Df.Magalu.Challenge.Tests.Entity
 {
     public class ClientTests
     {
+
         static IEnumerable<object[]> ClientWithProduct()
         {
-            Product product = new Product();
+            Product product = ProductFake.Create();
             return new[] { new object[] { "Gabriel Rodrigues", "grfgabriel.ti@gmail.com", product } };
         }
 
@@ -46,6 +48,12 @@ namespace Df.Magalu.Challenge.Tests.Entity
 
             client.FavoritesProducts.Count.Should().Be(1);
             client.FavoritesProducts.Should().NotBeNull();
+        }
+
+        public void ShouldAddProductInFavoriteList()
+        {
+
+            
         }
     }
 }

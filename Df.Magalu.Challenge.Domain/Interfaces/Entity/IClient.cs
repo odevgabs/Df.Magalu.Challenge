@@ -1,7 +1,6 @@
-﻿using Df.Magalu.Challenge.Domain.Entity;
+﻿using Df.Magalu.Challenge.Domain.ValueObject;
 using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace Df.Magalu.Challenge.Domain.Interfaces.Entity
 {

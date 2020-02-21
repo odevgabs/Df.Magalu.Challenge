@@ -27,8 +27,8 @@ namespace Df.Magalu.Challenge.Data.Context
             _commands = new List<Func<Task>>();
 
             RegisterConventions();
-
-            MongoClient = new MongoClient(Environment.GetEnvironmentVariable("MONGOCONNECTION") ?? configuration.GetSection("MongoSettings").GetSection("Connection").Value);
+            var connection = Environment.GetEnvironmentVariable("MONGOCONNECTION") ?? configuration.GetSection("MongoSettings").GetSection("Connection").Value;
+            MongoClient = new MongoClient();
 
             Database = MongoClient.GetDatabase(Environment.GetEnvironmentVariable("DATABASENAME") ?? configuration.GetSection("MongoSettings").GetSection("Database").Value);
 

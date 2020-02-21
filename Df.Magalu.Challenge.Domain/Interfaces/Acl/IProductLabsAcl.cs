@@ -1,8 +1,5 @@
-﻿using Df.Magalu.Challenge.Domain.Dto;
-using Df.Magalu.Challenge.Domain.Entity;
+﻿using Df.Magalu.Challenge.Domain.ValueObject;
 using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Df.Magalu.Challenge.Domain.Interfaces.Acl
